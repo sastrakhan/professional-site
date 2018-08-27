@@ -1,0 +1,15 @@
+/*
+Theme Name: Sean's Theme
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Theme URI: https://www.lyrathemes.com/bootstrap-wordpress-theme-tutorial/
+Author: Sean Astrakhan
+Author URI: www.seanstech.life
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+*/
+
+.row-m-t{
+    margin-top : 20px;
+    margin-bottom: 20%;
+  }
