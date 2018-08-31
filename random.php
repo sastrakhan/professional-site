@@ -1,4 +1,8 @@
+
+
 <?php
+//var_dump($post_trimmed);   //Display variable value along with meta data
+
                 $args = array(
                     'post_type'         => 'post',
                     'posts_per_page'    => 10
@@ -16,7 +20,7 @@
                 }
                 /* Restore original Post Data */
                 wp_reset_postdata();
-                //var_dumpdd();  
+                //var_dump();  
             ?>
 
 <!--Was in Sean-home-->
