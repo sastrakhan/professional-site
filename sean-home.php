@@ -7,14 +7,14 @@
     </main><!-- .site-main -->
 
     <!-- Bubbles code is happening here -->
-    <div class="demo-2">
+    <!-- <div class="demo-2">
 			<div class="content">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
                     <h1 class="main-title">Spirit</span></h1>
                 </div>
             </div>
-		</div>
+		</div> -->
 
     <button type="button" class="btn btn-info">Resume</button>
         
@@ -122,6 +122,7 @@
                         $post_title = get_the_title();
                         $description_trimmed = mb_strimwidth($post_full_description, 0, 150, '...<br />');
                         //Rendered HTML below
+                        echo '<a href="' . $post_link . '#">';
                         echo '<div class="card col-md-offset-4" style="width: 18rem;">';
                         echo    '<img class="card-img-top" src="' . $post_IMG . '" alt="TODO Change to image name">';
                         echo    '<div class="card-body">';
@@ -129,6 +130,7 @@
                         echo        '<p>' . $description_trimmed . $post_URL . '</p>';
                         echo    '</div>';
                         echo '</div>';
+                        echo '</a>';
                     }
             echo '</div>';
         }

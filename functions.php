@@ -11,10 +11,13 @@
         wp_register_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), true );
         wp_register_style( 'bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', false, NULL, 'all' );
         wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Philosopher|Crimson+Text', false, null, 'all');
+        wp_register_style('google-fonts2', 'https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300', false, null, 'all');
+
 
         wp_enqueue_script( 'bootstrap-js' );
         wp_enqueue_style( 'bootstrap-css' );
         wp_enqueue_style('google-fonts');
+        wp_enqueue_style('google-fonts2');
     }
 
     function enqueue_bubbles_js(){
@@ -31,4 +34,5 @@
 
     add_action( 'init', 'wpb_custom_new_menu' ); //allow menu
     add_theme_support( 'post-thumbnails' ); //allow featured image
+    require_once( get_template_directory() .'/template-parts/better-comments.php' ); //include custom comments page
 ?>
