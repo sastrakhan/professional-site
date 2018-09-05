@@ -22,7 +22,7 @@
         );
         $the_query = new WP_Query( $args );
 
-        echo '<div class="container">';
+        echo '<div class="container center">';
         if ( $the_query->have_posts() ) {
             echo '<div class="row">';
                     while ( $the_query->have_posts() ) {
@@ -33,25 +33,26 @@
                         $post_date = get_the_date();
                         $post_title = get_the_title();
                         $description_trimmed = mb_strimwidth($post_full_description, 0, 150, '...<br />');
-                        $post_tags =  get_the_tag_list('<div><button type="button" class="btn btn-info">',   '</button> <button type="button" class="btn btn-info">'   ,   '</button></div>');
+                        $post_tags =  get_the_tag_list('<div><button type="button" class="p-0 btn btn-secondary">',   '</button> <button type="button" class="p-0 btn btn-secondary">'   ,   '</button></div>');
                         //Clean up line above
 
                         //Rendered HTML below
-                                //echo '<a href="' . $post_link . '#">';
-                                echo '<div class="col-md-6 border rounded">';
-                                    echo '<div class="row">';
-                                        echo    '<div class="col test">';
-                                        echo        '<h5>' . $post_title . '</h5>';
-                                        echo        '<p class="text-center"><i>' . $post_date . '</i></p>';
-                                        echo        '<p>' . $description_trimmed . '</p>';
-                                        echo    '</div>';
-                                        echo    '<div class="col">';
-                                        echo            '<img class="img-fluid img-thumbnail" src="' . $post_IMG . '" alt="TODO Change to image name">';
-                                        echo            $post_tags;
-                                        echo    '</div>'; 
-                                    echo '</div>';
-                                //echo '</a>';
-                                echo '</div>';  
+                        //echo '<a href="' . $post_link . '#">';
+                        echo '<div class="col-md-5 border rounded blog-card">';
+                            echo '<div class="row">';
+                                echo    '<div class="col pt-5">';
+                                echo        '<h4 class="sean-blog-card-title">' . $post_title . '</h4>';
+                                echo        '<br />';
+                                echo        '<p>' . $description_trimmed . '</p>';
+                                echo        '<p class="text-right text-muted"><i>' . $post_date . '</i></p>';
+                                echo    '</div>';
+                                echo    '<div class="col p-0">';
+                                echo            '<img class="img-fluid" src="' . $post_IMG . '" alt="TODO Change to image name">';
+                                echo            $post_tags;
+                                echo    '</div>'; 
+                            echo '</div>';
+                        //echo '</a>';
+                        echo '</div>';  
                     }
             echo '</div>'; 
         }

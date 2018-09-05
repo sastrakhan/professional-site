@@ -14,7 +14,7 @@
                     <h1 class="main-title">Spirit</span></h1>
                 </div>
             </div>
-		</div> -->
+	</div> -->
 
     <button type="button" class="btn btn-info">Resume</button>
         

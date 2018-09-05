@@ -1,0 +1,157 @@
+
+/*
+Theme Name: Sean's Theme
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Theme URI: https://www.lyrathemes.com/bootstrap-wordpress-theme-tutorial/
+Author: Sean Astrakhan
+Author URI: www.seanstech.life
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+*/
+
+/*
+  Blue - #3A4664
+*/
+
+$theme-colors: (
+  "primary": #AAAAAA,
+  "danger": #EAA0A2,
+  "secondary": #3A4664,
+//   "success":,
+    "info": #F8DADB
+//   "warning":,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.row-m-t{
+    margin-top : 20px;
+    margin-bottom: 20%;
+  }
+  body{
+    font-family: 'Oxygen', sans-serif !important;
+  }
+  h1 h2 h3 h4 h5{
+    font-family: 'Chivo', sans-serif;
+  }
+h1 h5 {
+    font-weight: 400;
+    line-height: 46px;
+    font-size: 40px;
+    margin: 0 0 23px 0;
+    }
+h2 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+p {
+    font-family: 'Noto Serit', serif;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+.sean-blog-card-title{
+  text-align: center;
+  font-weight: 900;
+}
+
+.blog-card {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.blog-card:hover {
+  box-shadow: 0 14px 28px pink, 0 10px 10px pink;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.blog-card a {
+  color: white;
+}
+
+/* TODO:  figure out how to set a color properly */
+a.div { color: inherit; } 
+
+    /* ALL CODE BELOW FOR ANIMATION OF BUBBLE */
+
+    .large-header {
+      position: relative;
+      width: 100%;
+      background: grey;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+      z-index: 1;
+    }
+    
+    
+    .demo-2 .large-header {
+      background-position: center bottom;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
+    
+    
+    .main-title {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      color: #f9f1e9;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%,-50%,0);
+      transform: translate3d(-50%,-50%,0);
+    }
+    
+    
+    .demo-2 .main-title {
+      font-family: 'Clicker Script', cursive;
+      font-weight: normal;
+      font-size: 8em;
+      padding-left: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+    
+    .demo-2 .main-title::before {
+      content: '';
+      width: 20vw;
+      height: 20vw;
+      min-width: 3.5em;
+      min-height: 3.5em;
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      z-index: -1;
+      -webkit-transform: translate3d(-50%,-50%,0);
+      transform: translate3d(-50%,-50%,0);
+    }
+    
+    .main-title .thin {
+      font-weight: 200;
+    }
+    
+    @media only screen and (max-width : 768px) {
+      .demo-1 .main-title, 
+      .demo-3 .main-title,
+      .demo-4 .main-title {
+        font-size: 3em;
+      }
+    
+      .demo-2 .main-title {
+        font-size: 4em;
+      }
+    }
+
+.testing{
+    color:brown;
+}
