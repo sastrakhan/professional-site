@@ -9,7 +9,7 @@
     get_header(); 
 ?>
  
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area sm-header-margin">
         <main id="main" class="site-main" role="main">
         <?php
         //$params = $_GET['param_name'];
@@ -33,24 +33,27 @@
                         $post_date = get_the_date();
                         $post_title = get_the_title();
                         $description_trimmed = mb_strimwidth($post_full_description, 0, 150, '...<br />');
-                        $post_tags =  get_the_tag_list('<div><button type="button" class="p-0 btn btn-secondary">',   '</button> <button type="button" class="p-0 btn btn-secondary">'   ,   '</button></div>');
+                        $post_tags =  get_the_tag_list('<div class="center"><button type="button" class="p-1 btn btn-info">',   '</button> <button type="button" class="p-1 btn btn-info">'   ,   '</button></div>');
                         //Clean up line above
 
+                        //How to get image fade and margin on full
                         //Rendered HTML below
                         //echo '<a href="' . $post_link . '#">';
                         echo '<div class="col-md-5 border rounded blog-card">';
-                            echo '<div class="row">';
-                                echo    '<div class="col pt-5">';
+                                echo '<div class="row">';
+                                echo    '<div class="center p-3">';
                                 echo        '<h4 class="sean-blog-card-title">' . $post_title . '</h4>';
                                 echo        '<br />';
-                                echo        '<p>' . $description_trimmed . '</p>';
-                                echo        '<p class="text-right text-muted"><i>' . $post_date . '</i></p>';
                                 echo    '</div>';
-                                echo    '<div class="col p-0">';
-                                echo            '<img class="img-fluid" src="' . $post_IMG . '" alt="TODO Change to image name">';
-                                echo            $post_tags;
-                                echo    '</div>'; 
-                            echo '</div>';
+                                    echo    '<div class="col-8">';
+                                    echo        '<p>' . $description_trimmed . '</p>';
+                                    echo        '<p class="text-right text-muted"><i>' . $post_date . '</i></p>';
+                                    echo         $post_tags;
+                                    echo    '</div>';
+                                    echo    '<picture class="col-4 p-0">';
+                                    echo            '<img class="img-fluid" style="max-height:230px; float:right" src="' . $post_IMG . '" alt="TODO Change to image name">';
+                                    echo    '</picture>'; 
+                                echo '</div>';
                         //echo '</a>';
                         echo '</div>';  
                     }

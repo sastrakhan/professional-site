@@ -3,17 +3,15 @@
     if ( have_posts() ) { 
         while ( have_posts() ) : the_post();
     ?>
-
-    <div class="blog-post container">
-
-    <?php the_content(); ?>
+        <div class="content-area container sm-header-margin" id="wordpress-content-area">
+            <?php the_content(); ?>
         </div><!-- Stuff above shows page stuff-->
     <?php
         endwhile;
     } 
 ?> 
     
-</div><!-- /.blog-main -->
+<!-- /.blog-main -->
 
 <?php   
     get_footer(); 

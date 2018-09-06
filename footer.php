@@ -7,6 +7,8 @@
 ?>
 
 <br />
-<footer>
-    <h3>Footer?</h3>
+<footer style="background: pink">
+    <div class="container">    
+        <h3>Footer?</h3>
+    <div>
 </footer><!-- #colophon -->

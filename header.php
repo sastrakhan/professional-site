@@ -14,23 +14,39 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
-<div class="blog-masthead">
-    <div class="container">
-        <nav class="blog-nav">
-        <?php
-            wp_nav_menu( array( 
-                'theme_location' => 'my-custom-menu', 
-                'container_class' => 'custom-menu-class' ) ); 
-        ?>
-        </nav>
+<header class="small lg-header">
+    <nav class="container">
+        <div class="row">
+            <div class="blog-header col-6">
+                <h1 class="alert alert-primary" role="alert">Sean's Tech Life</h1>
+            </div>
+            <menu class="blog-masthead col-6">
+                <?php
+                    wp_nav_menu( array( 
+                        'theme_location' => 'my-custom-menu', 
+                        'container_class' => 'custom-menu-class list-inline' ) ); 
+                ?>
+            </menu>
+        </div>
+    </nav>
+            <!-- Bubbles code is happening here -->
+    <div class="demo-2">
+        <div class="content">
+            <div id="large-header">
+                <summary class="container well" style="color:white">
+                    <aside class="col">
+                        <h1 style="color:white;">Hi I'm Sean</h1>
+                    </aside>
+                    <article class="col">
+                        <p>ulius Sans One', sans-serulius Sans One', sans-serulius Sans One', sans-ser</p>
+                    </article>
+                <summary>
+                <canvas id="demo-canvas"></canvas>
+            </div>
+        </div>
     </div>
-</div>
+</header>
+
  
 
-<div class="container">
-    <div class="blog-header">
-        <h1 class="alert alert-primary" role="alert">The Bootstrap Sean Made Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-</div>
+

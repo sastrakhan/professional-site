@@ -8,7 +8,7 @@
 
     function initHeader() {
         width = window.innerWidth;
-        height = window.innerHeight;
+        height = window.innerHeight  * .75; //Think more on this
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('large-header');
@@ -35,8 +35,19 @@
     }
 
     function scrollCheck() {
-        if(document.body.scrollTop > height) animateHeader = false;
-        else animateHeader = true;
+
+        //console.log(document.documentElement.scrollTop, "Scroll point in demo2");
+        //document.getElementById('large-header').style.display = 'block';
+        if(document.documentElement.scrollTop > 5){
+            //animateHeader = false;//height) animateHeader = false;
+            document.getElementById('large-header').style.display = 'none';
+            //hide it 
+        } 
+        // else {
+        //     animateHeader = true;
+        //     document.getElementById('large-header').style.display = 'block';
+        //     //show it 
+        // }
     }
 
     function resize() {
@@ -65,7 +76,7 @@
         (function() {
             _this.pos = {};
             init();
-            console.log(_this);
+            //console.log(_this);
         })();
 
         function init() {
