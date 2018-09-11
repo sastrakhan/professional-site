@@ -13,12 +13,13 @@
         //wp_register_style( 'bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', false, NULL, 'all' );
         wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Philosopher|Crimson+Text', false, null, 'all');
         wp_register_style('google-fonts2', 'https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300', false, null, 'all');
-
+        wp_register_style('font-awesome',  'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, null, 'all');
 
         wp_enqueue_script( 'bootstrap-js' );
         //wp_enqueue_style( 'bootstrap-css' );
         wp_enqueue_style('google-fonts');
         wp_enqueue_style('google-fonts2');
+        wp_enqueue_style('font-awesome');
     }
 
     function enqueue_bubbles_js(){
@@ -33,7 +34,7 @@
     }
 
     function enqueue_sean_scripts_js(){
-        wp_enqueue_script( 'header-scroll', get_template_directory_uri() . '/js/hamburger-menu.js', array('jquery'), null, false );
+        wp_enqueue_script( 'hamburger-menu', get_template_directory_uri() . '/js/hamburger-menu.js', array('jquery'), null, false );
     }
     //Executes all scripts above
     add_action( 'wp_enqueue_scripts', 'enqueue_child_theme_styles', PHP_INT_MAX);

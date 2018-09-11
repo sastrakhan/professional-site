@@ -14,19 +14,37 @@
     <?php wp_head(); ?>
 </head>
 
-<header class="small lg-header">
-    <nav class="container">
-        <div class="row">
-            <div class="blog-header col-6">
-                <h1 class="alert alert-primary" role="alert">Sean's Tech Life</h1>
+<header class="small-header lg-header">
+
+    <nav class="navbar navbar-expand navbar-dark bg-primaryDark">
+        <div class="container">
+            <div style="margin-left: 25%">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Professional</a>
+                    </li>
+                </ul>         
             </div>
-            <menu class="blog-masthead col-6">
-                <?php
-                    wp_nav_menu( array( 
-                        'theme_location' => 'my-custom-menu', 
-                        'container_class' => 'custom-menu-class list-inline' ) ); 
-                ?>
-            </menu>
+            <picture>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small.png" class="sean-logo rounded-circle img-fluid">
+            </picture>
+
+            <div style="margin-right: 25%">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php/contact/">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php/my-blogs/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php/about/">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
             <!-- Bubbles code is happening here -->
@@ -38,10 +56,13 @@
                         <h1 style="color:white;">Hi I'm Sean</h1>
                     </aside>
                     <article class="col">
-                        <p>ulius Sans One', sans-serulius Sans One', sans-serulius Sans One', sans-ser</p>
+                        <p>ulus Sans One', sans-serulius Sans One', sans-serulius Sans One', sans-ser</p>
                     </article>
-                <summary>
-                <canvas id="demo-canvas"></canvas>
+                    <div id="btn-home-container" class="btn-home-hide">
+                        <a class="btn-home-page" href="#">Enter</a>
+                    </div>
+                </summary>
+                <canvas id="demo-canvas" class="mx-auto"></canvas>
             </div>
         </div>
     </div>

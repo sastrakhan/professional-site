@@ -1,4 +1,20 @@
 
+    <!--WP CREATED MENU FROM HEADER-->
+     <!-- <nav class="container">
+         <div class="row">
+            <div class="blog-header col-6">
+                <h1 class="" role="alert">Sean's Tech Life</h1>
+            </div> 
+             <menu class="blog-masthead col-6">
+             <?php
+                    wp_nav_menu( array( 
+                        'theme_location' => 'my-custom-menu', 
+                        'container_class' => 'custom-menu-class list-inline' ) ); 
+                ?>
+            </menu> 
+        </div>
+    </nav>   -->
+
 
 <?php
 //var_dump($post_trimmed);   //Display variable value along with meta data

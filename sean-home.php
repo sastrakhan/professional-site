@@ -7,58 +7,62 @@
             <h3>My home page</h3>
         </main><!-- .site-main -->
 
-        <button type="button" class="btn btn-info">Resume</button>
+        <aside class="clearfix">
+            <button type="button" class="btn btn-resume float-right">
+                <i class="fa fa-download fa-1x"></i> Resume 
+            </button>
+        </aside>
             
-            <ul class="nav nav-tabs row" id="myTab" role="tablist">
-                <li class="nav-item col-md-3">
-                    <div class="nav-link active" aria-selected="true" id="backend-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="home">
-                        <div>
-                            <h2>Back End</h2>
-                            <ul>
-                                <li>C#/.Net</li>
-                                <li>PHP</li>
-                                <li>Need something</li>
-                            </ul>
-                        </div>
+        <ul class="nav nav-tabs row" id="myTab" role="tablist">
+            <li class="nav-item col-md-3">
+                <div class="nav-link active" aria-selected="true" id="backend-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="home">
+                    <div>
+                        <h2>Back End</h2>
+                        <ul>
+                            <li>C#/.Net</li>
+                            <li>PHP</li>
+                            <li>Need something</li>
+                        </ul>
                     </div>
-                </li>
-                <li class="nav-item col-md-3">
-                    <div class="nav-link" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">
-                        <div>
-                            <h2>Javascript</h2>
-                            <ul>
-                                <li>React</li>
-                                <li>Angular</li>
-                                <li>Handle Bars</li>
-                            </ul>
-                        </div>
+                </div>
+            </li>
+            <li class="nav-item col-md-3">
+                <div class="nav-link" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">
+                    <div>
+                        <h2>Javascript</h2>
+                        <ul>
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>Handle Bars</li>
+                        </ul>
                     </div>
-                </li>
-                <li class="nav-item col-md-3">
-                    <div class="nav-link" id="data-exp-tab" data-toggle="tab" href="#data-exp" role="tab" aria-controls="data-exp" aria-selected="false">
-                        <div>
-                            <h2>Data</h2>
-                            <ul>
-                                <li>SQL</li>
-                                <li>SSIS</li>
-                                <li>Power BI</li>
-                            </ul>
-                        </div>
+                </div>
+            </li>
+            <li class="nav-item col-md-3">
+                <div class="nav-link" id="data-exp-tab" data-toggle="tab" href="#data-exp" role="tab" aria-controls="data-exp" aria-selected="false">
+                    <div>
+                        <h2>Data</h2>
+                        <ul>
+                            <li>SQL</li>
+                            <li>SSIS</li>
+                            <li>Power BI</li>
+                        </ul>
                     </div>
-                </li>
-                <li class="nav-item col-md-3">
-                    <div class="nav-link" id="saas-exp-tab" data-toggle="tab" href="#saas-exp" role="tab" aria-controls="saas-exp" aria-selected="false">
-                        <div>
-                            <h2>SAAS</h2>
-                            <ul>
-                                <li>CRM</li>
-                                <li>WordPress</li>
-                                <li>SharePoint</li>
-                            </ul>
-                        </div>
+                </div>
+            </li>
+            <li class="nav-item col-md-3">
+                <div class="nav-link" id="saas-exp-tab" data-toggle="tab" href="#saas-exp" role="tab" aria-controls="saas-exp" aria-selected="false">
+                    <div>
+                        <h2>SAAS</h2>
+                        <ul>
+                            <li>CRM</li>
+                            <li>WordPress</li>
+                            <li>SharePoint</li>
+                        </ul>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </li>
+        </ul>
 
         <div class="tab-content" id="myTabContent" style="padding: 3%;">
             <div class="tab-pane fade show active" id="backend" role="tabpanel" aria-labelledby="backend-tab">
@@ -86,6 +90,7 @@
             <!--A bunch of blog posts with circles following material design-->
         </section>
     </div>
+  
 </main>
 
 

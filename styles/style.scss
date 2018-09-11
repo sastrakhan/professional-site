@@ -11,19 +11,46 @@ Version: 1.0
 */
 
 $theme-colors: (
-  "primary": #AAAAAA,
-  "danger": #EAA0A2,
-  "secondary": #3A4664,
+  "primary": #9e9e9e,
+  "danger": #bf5f82,
+  "secondary": #f48fb1,
 // "success":,
-   "info": #F8DADB,
-   "sa-green" : green
-//   "warning":,
+   "info": #ffc1e3,
+   "primaryLight" : #cfcfcf,
+   "primaryDark": #707070,
+    "secondaryLight" : #ffc1e3,
+    "secondaryDark" : #bf5f82
 );
+
+// "danger": #bf5f82,
+// "secondary": #f48fb1,
+// // "success":,
+//  "info": #ffc1e3,
+$primaryLight: #cfcfcf;
+$primaryDark: #707070;
+$secondaryLight : #ffc1e3;
+$secondaryDark : #bf5f82;
+
+// Grey mid 
+// #9e9e9e
+// Grey light 
+// #cfcfcf
+// Grey dark 
+// #707070
+// Pink mid 
+// #f48fb1
+// Pink light 
+// #ffc1e3
+// Pink dark
+// #bf5f82
+
+
 
 @import ".././node_modules/bootstrap/scss/bootstrap";
 @import "./components/header";
 @import "./components/blog-card";
 @import "./components/bubbles";
+@import "./components/button-on-home-page";
 
 h1 h2 h3 h4 h5{
     font-family: 'Chivo', sans-serif;
@@ -36,7 +63,6 @@ a {
 
 body{
     font-family: 'Oxygen', sans-serif !important;
-    background: yellowgreen;
 }
 
 main {
@@ -50,10 +76,23 @@ p {
     margin: 0 0 23px 0;
 }
 
+.btn-resume {
+    color: $secondaryLight;
+    letter-spacing: 1px;
+    border: 2px solid $secondaryLight;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn-resume:hover {
+    color: #FFF;
+    background: $secondaryLight;
+  }
+
 .btn a {
     color: $gray-600;
 }
-
 
 
 .card:hover {
