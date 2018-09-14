@@ -51,13 +51,19 @@
     <div class="demo-2">
         <div class="content">
             <div id="large-header">
-                <summary class="container well" style="color:white">
-                    <aside class="col">
-                        <h1 style="color:white;">Hi I'm Sean</h1>
-                    </aside>
-                    <article class="col">
-                        <p>ulus Sans One', sans-serulius Sans One', sans-serulius Sans One', sans-ser</p>
-                    </article>
+                <summary>
+                    <div class="container col-md-6 pull-left offset-md-2 text-white pt-5">
+                        <aside class="mb-5">
+                            <h1>Hi, I'm Sean,</h1>
+                            <h4 class="NotoFont">I like to code, listen, and give unsolicted advice.</h4>
+                        </aside>
+                        <article>
+                            <!-- <p>
+                                Learn more about <a class="text-secondaryDark" href="index.php/about/">who I am </a>
+                                or my <a class="text-secondaryDark" href="#">professional background</a>.  
+                            </p> MAKE THIS A MENU-->
+                        </article>
+                    </div>
                     <div id="btn-home-container" class="btn-home-hide">
                         <a class="btn-home-page" href="#">Enter</a>
                     </div>

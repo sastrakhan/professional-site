@@ -10,7 +10,6 @@
 		$(".navbar").addClass("navHide");
 
 		//Fade in welcome button
-		//$(".btn-home-page").fadeIn(500);
 		setTimeout(function(){
 			$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
 		},2000);

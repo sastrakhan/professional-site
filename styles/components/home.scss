@@ -1,0 +1,38 @@
+#home-banner{
+    font-style: italic;
+    text-align: center;
+    color: $primaryMid;
+    font-family: 'Noto Serit'
+}
+
+#home-quote{
+    font-size: 16px;
+    color: lightgray;
+}
+
+     
+#project-list .nav-link.active {
+    color: inherit;  
+    border-color: $primaryDark $primaryDark transparent;    
+    background-color: lighten( $primaryLight, 30% );
+}
+
+#project-list {
+    border-bottom: 1px solid $primaryDark;
+}
+// #project-list .nav-link{
+ 
+//     _border-color: $primaryLightGrey;
+     
+// }
+     
+// #project-list .nav-link.active {
+    
+//     _background-color: $primaryLightGrey;
+//     _color: white !important;
+        
+// }
+
+.tab-content{
+    background-color: lighten( $primaryLight, 30% )
+}

@@ -7,8 +7,13 @@
 ?>
 
 <br />
-<footer style="background: pink">
-    <div class="container">    
-        <h3>Footer?</h3>
+<footer class="bg-primaryLight">
+    <div class="container">   
+        <div class="col">
+        </div> 
+        <div class="col">
+        </div> 
+        <div class="col">
+        </div> 
     <div>
 </footer><!-- #colophon -->

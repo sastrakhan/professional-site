@@ -3,17 +3,26 @@
  
 <main class="container content-area">
     <div id="primary" class="row-m-t">
-        <main id="main" class="site-main" role="main">
-            <h3>My home page</h3>
-        </main><!-- .site-main -->
+        
+        <blockquote style="margin-top:10%;" class="blockquote col-md-6">
+                    <h3 class="NotoFont text-primaryDark">
+                    <small><i class="small fa fa-quote-left"></i></small>
+                        A full-stack developer who values <large class="text-secondaryDark">learning</large> 
+                        and <large class="text-secondaryDark">collaboration</large> over comfort and predicability.
+                     <small><i class="small fa fa-quote-right"></i></small> 
+                     <span id="home-quote">-I said about myself</span>
+                    </h3>
+        </blockquote>
+
+        <h4 id="home-banner">Skills &amp; Projects</h4>
 
         <aside class="clearfix">
             <button type="button" class="btn btn-resume float-right">
-                <i class="fa fa-download fa-1x"></i> Resume 
+                <i class="fa fa-download" aria-hidden="true"></i> Resume 
             </button>
         </aside>
             
-        <ul class="nav nav-tabs row" id="myTab" role="tablist">
+        <ul id="project-list" class="nav nav-tabs row" id="myTab" role="tablist">
             <li class="nav-item col-md-3">
                 <div class="nav-link active" aria-selected="true" id="backend-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="home">
                     <div>
@@ -82,12 +91,12 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="row">
         <section class="col-md-6">
             <h2>Some Quote that speaks about you</h2>
         </section>
         <section class="col-md-6">
-            <!--A bunch of blog posts with circles following material design-->
+            <?php createBlogList() ?>
         </section>
     </div>
   
@@ -98,17 +107,57 @@
 <script src="./wp-content/themes/custom_sean_theme/js/bubbles/demo-2.js"></script>
  
 <?php 
+    function createBlogList(){
+        $blogPosts = getPosts('Uncategorized', 3);
+
+        foreach($blogPosts as $blogPost){
+            $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
+            $description_trimmed = mb_strimwidth($blogPost -> full_description, 0, 150, '...<br />');
+
+            echo '<div class="row">';
+            echo    '<div class="col-4">';
+            echo       '<img class="circle img-fluid" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
+            echo    '</div>';
+            echo    '<div class="col-8">';
+            echo        '<h4 class="text-primaryMid">' . $blogPost -> title . '</h4>';
+            echo        '<p>' . $description_trimmed . $post_URL . '</p>';
+            echo        '<div class="container row justify-content-between">';
+            echo            '<div class"col-4">';
+            echo                '<p class="text-muted"><i>' . $blogPost -> dateCreated . '</i></p>';
+            echo            '</div>';
+            echo            '<div class"col-4">';
+            echo                '<p>' . $blogPost -> tags_formatted . '</p>';
+            echo            '</div>';
+            echo        '</div>';
+            echo    '</div>';
+            echo '</div>';
+        }
+    }
+
+    function getPosts($categoryName, $amount){
+        require_once('template-parts/seanPost.php');
+
+        $args = array(
+            'post_type'         => 'post',
+            'posts_per_page'    => $amount,
+            'category_name' => $categoryName
+        );
+
+        $the_query = new WP_Query( $args ); 
+        return getPostProperties($the_query);
+    }
+
     function buildPostExcerpt($category){
         $args = array(
             'post_type'         => 'post',
-            'posts_per_page'    => 10,
+            'posts_per_page'    => '10',
             'category_name' => $category
         );
-        $the_query = new WP_Query( $args );
-        
+
+        $the_query = new WP_Query( $args ); 
         // The Loop that actually loops posts
         //  Use this maybe for experience file:///Users/ryanallis/Downloads/ExpandingGridItemAnimation/index.html 
-        if ( $the_query->have_posts() ) {
+        if ( $the_query->have_posts()) {
             echo '<div class="row">';
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post();
