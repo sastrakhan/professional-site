@@ -54,12 +54,14 @@ $primaryDarkGrey: #707070;
 // Pink dark
 // #bf5f82
 
+
 @import ".././node_modules/bootstrap/scss/bootstrap";
 @import "./components/header";
 @import "./components/blog-card";
 @import "./components/bubbles";
 @import "./components/button-on-home-page";
 @import "./components/home";
+@import "./components/footer";
 
 body{
     font-family: 'Oxygen', sans-serif;
@@ -68,6 +70,11 @@ body{
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: $secondaryDark;
   }
 
 main {

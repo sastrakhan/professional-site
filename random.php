@@ -1,5 +1,25 @@
-
-    <!--WP CREATED MENU FROM HEADER-->
+<form class="form-group">
+            <h3>Say hi!</h3>
+            <div>
+                <label> Your Email </label>
+                 [email* your-email id:contactFormEmail class:form-control]
+            </div> 
+            <div>
+                <label> Subject </label>
+                 [text your-subject id:contactFormSubject class:form-control] 
+            </div>
+            <div>
+                <label> Your Message</label>
+                    [textarea your-message class:form-control] 
+                    [submit id:contactSubmit class:btn class:btn-primaryDark "Send!"]
+                    <small id="emailHelp" class="form-text text-muted">Check out this link.</small>
+            </div> 
+            
+        <div>
+</form>
+   
+   
+   <!--WP CREATED MENU FROM HEADER-->
      <!-- <nav class="container">
          <div class="row">
             <div class="blog-header col-6">

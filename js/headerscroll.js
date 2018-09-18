@@ -21,13 +21,19 @@
 
 		if($(document).scrollTop()>5) {
 			//Entering main content area and header should be small
+			
 			$("header").removeClass("lg-header-height").addClass("sm-header-height");
 			$(".content-area").removeClass("lg-header-margin").addClass("sm-header-margin");
 			$("#large-header").removeClass("d-block");
 
 			//Logic seems unesessary below but required in this order to have smooth animations
 			$(".navbar").addClass( "navShow");
-			$(".navbar").removeClass( "navHide");			
+			$(".navbar").removeClass( "navHide");	
+			
+			//We need to keep the header as holding the background image to improve scrolling appearance
+			setTimeout(function(){
+				$("header").css("background", "none");
+			},600);
 		} 
 		//TODO:  Figure out how to enable this stuff
 		// else {

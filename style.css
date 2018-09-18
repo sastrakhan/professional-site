@@ -7589,7 +7589,8 @@ header.lg-header-height {
   height: 100vh; }
 
 header.sm-header-height {
-  height: 10vh; }
+  height: 10vh;
+  _background: green; }
 
 .lg-header-margin {
   margin-top: 100vh; }
@@ -7609,6 +7610,10 @@ header {
   z-index: 10;
   width: 100%;
   background: url("./images/sean-astrakhan.png"); }
+
+.bgbg-primaryDark {
+  background: #34515e;
+  background: rgba(27, 55, 68, 0.85); }
 
 header,
 .lg-header
@@ -7792,12 +7797,20 @@ a.div {
 .tab-content {
   background-color: #eef2f4; }
 
+hr.contactFormLine {
+  border-top: 1px solid #8c8b8b;
+  margin-bottom: 0px; }
+
 body {
   font-family: 'Oxygen', sans-serif; }
 
 a {
   text-decoration: none;
   color: inherit; }
+
+a:hover {
+  text-decoration: none !important;
+  color: #bf5f82; }
 
 main {
   _margin-top: 90vh; }

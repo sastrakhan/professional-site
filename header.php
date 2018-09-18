@@ -16,7 +16,7 @@
 
 <header class="small-header lg-header">
 
-    <nav class="navbar navbar-expand navbar-dark bg-primaryDark">
+    <nav class="navbar navbar-expand navbar-dark bgbg-primaryDark">
         <div class="container">
             <div style="margin-left: 25%">
                 <ul class="nav navbar-nav">

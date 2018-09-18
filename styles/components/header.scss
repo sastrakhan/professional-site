@@ -15,6 +15,7 @@ header.lg-header-height {
 
 header.sm-header-height {
     height: $header-sm-height;
+    _background: green;
 }
 
 .lg-header-margin{
@@ -26,12 +27,8 @@ header.sm-header-height {
 }
 
 .lg-header {
-    //position: relative;
-    //width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    //background-position: center center;
-    //z-index: 1;
     background-attachment: fixed;
     background-position: center;
 }
@@ -42,6 +39,11 @@ header {
     z-index: 10;
     width: 100%;
     background: url("./images/sean-astrakhan.png");
+}
+
+.bgbg-primaryDark{
+    background: $primaryDark;
+    background: darken(saturate(rgba($primaryDark, 0.85), 15%), 10%);
 }
 
 header,
