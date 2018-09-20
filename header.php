@@ -21,22 +21,19 @@
             <div style="margin-left: 25%">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Professional</a>
+                        <a class="nav-link" href="index.php">Sean Astrakhan</a>
                     </li>
                 </ul>         
             </div>
             <picture>
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small.png" class="sean-logo rounded-circle img-fluid">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small-oct.png" class="sean-logo rounded-circle img-fluid">
             </picture>
 
             <div style="margin-right: 25%">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="index.php/contact/">Contact</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.php/my-blogs/">Blog</a>
                     </li>

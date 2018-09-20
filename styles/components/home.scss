@@ -50,6 +50,22 @@
     color: inherit;
     border: none;
 }
+.bdcp-image{
+    background-image: url("./images/bdcp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
+}
+
+.code4bmore-image{
+    @extend .bdcp-image;
+    background-image: url("./images/sean-astrakhan-codebmore.png");
+}
+.darken-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 
 .wrapper {
     display: inline-block;

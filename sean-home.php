@@ -93,10 +93,54 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row container">
         <section class="col bg-primaryMid">
-            <h3>In the Community...</h3>
-            <p class="text-muted">“It’s easy to make a buck.  It’s a lot tougher to make a difference. ” – Tom Brokaw</p>
+            <h3 class="text-white mt-4">In the Community...</h3>
+            <p class="text-white">“It’s easy to make a buck.  It’s a lot tougher to make a difference. ” – Tom Brokaw</p>
+
+            <!-- Card Narrower -->
+            <div class="card card-cascade narrower mb-3">
+                <!-- Card image -->
+                <div class="view view-cascade overlay bdcp-image darken-overlay">
+                    <a>
+                        <h3 class="pt-2 text-white"><strong>Baltimore Dance Crews Project</strong></h3>
+                    </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body card-body-cascade">
+                    <!-- Title -->
+                    <h4 class="card-title">Dancer &amp; Relationship Builder</h4>
+                    <!-- Text -->
+                    <p class="card-text">
+                        Volunteering with their data and CRM needs to help more people hear about their incredible mission - 
+                        initiate and strengthen relationships through hip hop dance to aid students from school to career.   
+                        [website icon]    
+                    </p>
+                </div>
+            </div>
+            <!-- Card Narrower -->
+
+            <!-- Card Narrower -->
+            <div class="card card-cascade narrower mb-3">
+                <!-- Card image -->
+                <div class="view view-cascade overlay code4bmore-image darken-overlay">
+                    <a>
+                        <h3 class="pt-2 text-white"><strong>Code 4 Baltimore</strong></h3>
+                    </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body card-body-cascade">
+                    <!-- Title -->
+                    <h4 class="card-title">Tech Lead</h4>
+                    <!-- Text -->
+                    <p class="card-text">
+                        Why learn new tech skills by building simple applications you're going to toss?  This organization allows me 
+                        to grow my abilities through projects that can be put to practical use to aid the city.   
+                        [website icon]    
+                    </p>
+                </div>
+            </div>
+            <!-- Card Narrower -->
         </section>
         <section class="col flex-260">
             <?php createBlogList() ?>
