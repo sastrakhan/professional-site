@@ -1,7 +1,7 @@
 
 <?php
 /*
- * Template Name: sean-posts
+ * Template Name: sean-blog-posts
  * The template for displaying all single posts and attachments
  * @package WordPress
  */

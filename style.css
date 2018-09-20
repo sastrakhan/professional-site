@@ -7589,14 +7589,14 @@ header.lg-header-height {
   height: 100vh; }
 
 header.sm-header-height {
-  height: 10vh;
+  height: 11vh;
   _background: green; }
 
 .lg-header-margin {
   margin-top: 100vh; }
 
 .sm-header-margin {
-  margin-top: 10vh; }
+  margin-top: 11vh; }
 
 .lg-header {
   background-size: cover;
@@ -7791,12 +7791,32 @@ a.div {
   border-color: #34515e #34515e transparent;
   background-color: #eef2f4; }
 
+#project-list .nav-link {
+  color: inherit;
+  border-color: #cfcfcf #cfcfcf transparent; }
+
 #project-list {
   border-bottom: 1px solid #34515e; }
 
 .flex-260 {
   -ms-flex: 0 0 700px;
   flex: 0 0 700px; }
+
+.btn-resume, .btn-resume-footer {
+  color: #ffc1e3;
+  letter-spacing: 1px;
+  border: 2px solid #ffc1e3;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s; }
+
+.btn-resume:hover, .btn-resume-footer:hover {
+  color: #FFF;
+  background: #ffc1e3; }
+
+.btn-resume-footer {
+  color: inherit;
+  border: none; }
 
 .wrapper {
   display: inline-block;
@@ -7806,12 +7826,12 @@ a.div {
 .wrapper > .circle {
   position: absolute;
   border: 3px solid #607d8b;
-  width: 50%;
+  width: 85%;
   height: 50%;
   top: 50%;
-  margin-top: -40%;
+  margin-top: -60%;
   _left: 50%;
-  margin-left: 35%;
+  margin-left: 40%;
   border-radius: 100%; }
 
 .tab-content {
@@ -7833,7 +7853,7 @@ a:hover {
   color: #bf5f82; }
 
 main {
-  _margin-top: 90vh; }
+  _margin-top: 89vh; }
 
 p {
   font-family: 'Noto Serit', serif;
@@ -7843,20 +7863,22 @@ p {
 .NotoFont {
   font-family: 'Noto Serit', serif; }
 
-.btn-resume {
-  color: #ffc1e3;
-  letter-spacing: 1px;
-  border: 2px solid #ffc1e3;
-  border-radius: 40px;
-  background: transparent;
-  transition: all 0.3s ease 0s; }
-
-.btn-resume:hover {
-  color: #FFF;
-  background: #ffc1e3; }
-
 .btn a {
   color: #6c757d; }
+
+.btn-primaryMid a {
+  color: #ececec; }
+
+.post-navigation-heading h2 {
+  margin-top: 5%;
+  font-size: 100%;
+  color: #34515e; }
+
+.nav-previous, .nav-next {
+  color: #bf5f82; }
+
+.nav-previous:hover {
+  color: #bf5f82; }
 
 .card:hover {
   box-shadow: 0 14px 28px pink, 0 10px 10px pink;
@@ -7871,7 +7893,7 @@ p {
 
 .row-m-t {
   margin-top: 20px;
-  margin-bottom: 20%; }
+  margin-bottom: 10%; }
 
 /* TODO:  figure out how to set a color properly */
 

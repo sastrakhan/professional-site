@@ -2,9 +2,8 @@
 <?php get_header(); ?>
  
 <main class="container content-area">
-    <div id="primary" class="row-m-t">
-        
-        <blockquote style="margin-top:10%;" class="blockquote col-md-6">
+    <div id="primary" class="row-m-t"> 
+        <blockquote id="homeTopQuote" style="margin-top:10%;" class="blockquote col-md-6">
                     <h3 class="NotoFont text-primaryDark">
                     <small><i class="small fa fa-quote-left"></i></small>
                         A full-stack developer who values <large class="text-secondaryDark">learning</large> 
@@ -17,13 +16,16 @@
         <h4 id="home-banner">Skills &amp; Projects</h4>
 
         <aside class="clearfix">
+            <button type="button" class="btn text-secondaryLight float-left">
+                <a href="https://www.github.com/sastrakhan?tab=stars" target="_blank"><span class="fa fa-2x fa-github secondaryLight"></span></a>
+            </button>
             <button type="button" class="btn btn-resume float-right">
                 <i class="fa fa-download" aria-hidden="true"></i> Resume 
             </button>
         </aside>
             
-        <ul id="project-list" class="nav nav-tabs row" id="myTab" role="tablist">
-            <li class="nav-item col-md-3">
+        <ul id="project-list" class="nav nav-tabs row mt-2" id="myTab" role="tablist">
+            <li class="nav-item col-6 col-md-3">
                 <div class="nav-link active" aria-selected="true" id="backend-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="home">
                     <div>
                         <h2>Back End</h2>
@@ -35,7 +37,7 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item col-md-3">
+            <li class="nav-item col-6 col-md-3">
                 <div class="nav-link" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">
                     <div>
                         <h2>Javascript</h2>
@@ -47,7 +49,7 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item col-md-3">
+            <li class="nav-item col-6 col-md-3">
                 <div class="nav-link" id="data-exp-tab" data-toggle="tab" href="#data-exp" role="tab" aria-controls="data-exp" aria-selected="false">
                     <div>
                         <h2>Data</h2>
@@ -59,7 +61,7 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item col-md-3">
+            <li class="nav-item col-6 col-md-3">
                 <div class="nav-link" id="saas-exp-tab" data-toggle="tab" href="#saas-exp" role="tab" aria-controls="saas-exp" aria-selected="false">
                     <div>
                         <h2>SAAS</h2>
@@ -92,9 +94,9 @@
     </div>
 
     <div class="row">
-        <section class="col">
+        <section class="col bg-primaryMid">
             <h3>In the Community...</h3>
-            <h5>“It’s easy to make a buck.  It’s a lot tougher to make a difference. ” – Tom Brokaw</h5>
+            <p class="text-muted">“It’s easy to make a buck.  It’s a lot tougher to make a difference. ” – Tom Brokaw</p>
         </section>
         <section class="col flex-260">
             <?php createBlogList() ?>
@@ -102,7 +104,6 @@
     </div>
   
 </main>
-
 
 <script src="./wp-content/themes/custom_sean_theme/js/bubbles/rAF.js"></script>
 <script src="./wp-content/themes/custom_sean_theme/js/bubbles/demo-2.js"></script>
@@ -116,10 +117,10 @@
             $description_trimmed = mb_strimwidth($blogPost -> full_description, 0, 150, '...<br />');
 
             echo '<div class="row">';
-            echo    '<div class="col-4 wrapper">';
+            echo    '<div class="col-2 wrapper">';
             echo       '<img class="rounded-circle img-responsive circle" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
             echo    '</div>';
-            echo    '<div class="col-8">';
+            echo    '<div class="offset-1 col-8">';
             echo        '<h4 class="text-primaryMid">' . $blogPost -> title . '</h4>';
             echo        '<p>' . $description_trimmed . $post_URL . '</p>';
             echo        '<div class="container row justify-content-between">';

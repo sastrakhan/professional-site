@@ -12,6 +12,8 @@
         <main id="main" class="site-main" role="main">
         <?php
 
+        require_once('template-parts/post-nav-prev-next.php');
+
         // Start the loop.
         while ( have_posts() ) : the_post();
  
@@ -28,14 +30,15 @@
             endif;
  
             // This needs to be improved or deleted 
-            the_post_navigation( array(
-                'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-                'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-                    '<span class="post-title">%title</span>',
-            ) );
+            // the_post_navigation( array(
+            //     'prev_text'                  => __( 'Previous: %title' ),
+            //     'next_text'                  => __( 'Next: %title' ),
+            //     'in_same_term'               => true
+            //     // 'taxonomy'                   => __( 'post_tag' ),
+            //     // 'screen_reader_text' => __( 'Continue Reading' ),
+            // ) );
+
+            echo sean_the_post_navigation();
  
         // End the loop.
         endwhile;

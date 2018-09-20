@@ -92,24 +92,27 @@ p {
     font-family: 'Noto Serit', serif;
 }
 
-.btn-resume {
-    color: $secondaryLight;
-    letter-spacing: 1px;
-    border: 2px solid $secondaryLight;
-    border-radius: 40px;
-    background: transparent;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .btn-resume:hover {
-    color: #FFF;
-    background: $secondaryLight;
-  }
-
 .btn a {
     color: $gray-600;
 }
 
+.btn-primaryMid a {
+    color: $white;
+}
+
+.post-navigation-heading h2{
+    margin-top: 5%;
+    font-size: 100%;
+    color: $primaryDark;
+}
+
+.nav-previous, .nav-next {
+    color: $secondaryDark;
+}
+
+.nav-previous:hover{
+    color: $secondaryDark;
+}
 
 .card:hover {
     box-shadow: 0 14px 28px pink, 0 10px 10px pink;
@@ -131,7 +134,7 @@ p {
 
 .row-m-t{
     margin-top : 20px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
 

@@ -14,11 +14,16 @@
 			$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
 		},2000);
 
+		//btn-home-container
+		$("#btn-home").click(function () {
+			//Needs twice in a row or doesn't work
+			$('html').animate({ scrollTop: '+=5px'}, 100);
+			$('html').animate({ scrollTop: '+=5px'}, 100);
+		});
+
 		//Original code:  https://www.bootply.com/101026
 		$('#accordion').on('shown.bs.collapse', function () {
-  
-			var panel = $(this).find('.in');
-			
+			var panel = $(this).find('.in');	
 			$('html, body').animate({
 				  scrollTop: panel.offset().top
 			}, 500);
@@ -27,7 +32,6 @@
 	})
 
 	$(document).on("scroll", function() {
-
 		//console.log($(document).scrollTop(), "header scrolling firing");
 
 		if($(document).scrollTop()>5) {

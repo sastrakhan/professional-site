@@ -17,6 +17,11 @@
     background-color: lighten( $primaryLight, 30% );
 }
 
+#project-list .nav-link {
+    color: inherit;  
+    border-color: $primaryLightGrey $primaryLightGrey transparent;    
+}
+
 #project-list {
     border-bottom: 1px solid $primaryDark;
 }
@@ -25,6 +30,27 @@
     -ms-flex: 0 0 700px;
     flex: 0 0 700px;
 }
+
+.btn-resume {
+    color: $secondaryLight;
+    letter-spacing: 1px;
+    border: 2px solid $secondaryLight;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+  
+.btn-resume:hover {
+    color: #FFF;
+    background: $secondaryLight;
+}
+
+.btn-resume-footer{
+    @extend .btn-resume;
+    color: inherit;
+    border: none;
+}
+
 .wrapper {
     display: inline-block;
     position: relative;
@@ -34,12 +60,12 @@
 .wrapper > .circle {
     position: absolute;
     border: 3px solid $primaryMid;
-    width: 50%;
+    width: 85%;
     height: 50%;
     top: 50%;
-    margin-top: -40%;
+    margin-top: -60%;
     _left: 50%;
-    margin-left: 35%;
+    margin-left: 40%;
     border-radius: 100%;
 }
 // #project-list .nav-link{

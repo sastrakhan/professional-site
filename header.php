@@ -21,7 +21,7 @@
             <div style="margin-left: 25%">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php/">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/">Professional</a>
@@ -65,7 +65,7 @@
                         </article>
                     </div>
                     <div id="btn-home-container" class="btn-home-hide">
-                        <a class="btn-home-page" href="#">Enter</a>
+                        <h4 id="btn-home" class="btn-home-page">Enter</h4>
                     </div>
                 </summary>
                 <canvas id="demo-canvas" class="mx-auto"></canvas>
