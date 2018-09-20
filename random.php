@@ -1,5 +1,4 @@
 <form class="form-group">
-            <h3>Say hi!</h3>
             <div>
                 <label> Your Email </label>
                  [email* your-email id:contactFormEmail class:form-control]

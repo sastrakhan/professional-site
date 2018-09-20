@@ -13,6 +13,17 @@
 		setTimeout(function(){
 			$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
 		},2000);
+
+		//Original code:  https://www.bootply.com/101026
+		$('#accordion').on('shown.bs.collapse', function () {
+  
+			var panel = $(this).find('.in');
+			
+			$('html, body').animate({
+				  scrollTop: panel.offset().top
+			}, 500);
+			
+		});
 	})
 
 	$(document).on("scroll", function() {

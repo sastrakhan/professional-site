@@ -7794,11 +7794,31 @@ a.div {
 #project-list {
   border-bottom: 1px solid #34515e; }
 
+.flex-260 {
+  -ms-flex: 0 0 700px;
+  flex: 0 0 700px; }
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+  max-height: 50%; }
+
+.wrapper > .circle {
+  position: absolute;
+  border: 3px solid #607d8b;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  margin-top: -40%;
+  _left: 50%;
+  margin-left: 35%;
+  border-radius: 100%; }
+
 .tab-content {
   background-color: #eef2f4; }
 
 hr.contactFormLine {
-  border-top: 1px solid #8c8b8b;
+  border-top: 1px solid #ececec;
   margin-bottom: 0px; }
 
 body {

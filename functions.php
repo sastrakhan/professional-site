@@ -11,8 +11,7 @@
         
         wp_register_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), true );
         //wp_register_style( 'bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', false, NULL, 'all' );
-        wp_register_style('google-fonts', 'https://fonts.googleapis.com/css?family=Philosopher|Crimson+Text', false, null, 'all');
-        wp_register_style('google-fonts2', 'https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300', false, null, 'all');
+        wp_register_style('google-fonts2', 'https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:400,700', false, null, 'all');
         wp_register_style('font-awesome',  'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, null, 'all');
 
         wp_enqueue_script( 'bootstrap-js' );

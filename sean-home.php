@@ -92,10 +92,11 @@
     </div>
 
     <div class="row">
-        <section class="col-md-6">
-            <h2>Some Quote that speaks about you</h2>
+        <section class="col">
+            <h3>In the Community...</h3>
+            <h5>“It’s easy to make a buck.  It’s a lot tougher to make a difference. ” – Tom Brokaw</h5>
         </section>
-        <section class="col-md-6">
+        <section class="col flex-260">
             <?php createBlogList() ?>
         </section>
     </div>
@@ -115,8 +116,8 @@
             $description_trimmed = mb_strimwidth($blogPost -> full_description, 0, 150, '...<br />');
 
             echo '<div class="row">';
-            echo    '<div class="col-4">';
-            echo       '<img class="circle img-fluid" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
+            echo    '<div class="col-4 wrapper">';
+            echo       '<img class="rounded-circle img-responsive circle" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
             echo    '</div>';
             echo    '<div class="col-8">';
             echo        '<h4 class="text-primaryMid">' . $blogPost -> title . '</h4>';

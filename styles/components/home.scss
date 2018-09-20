@@ -20,6 +20,28 @@
 #project-list {
     border-bottom: 1px solid $primaryDark;
 }
+
+.flex-260{
+    -ms-flex: 0 0 700px;
+    flex: 0 0 700px;
+}
+.wrapper {
+    display: inline-block;
+    position: relative;
+    max-height: 50%;
+}
+
+.wrapper > .circle {
+    position: absolute;
+    border: 3px solid $primaryMid;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    margin-top: -40%;
+    _left: 50%;
+    margin-left: 35%;
+    border-radius: 100%;
+}
 // #project-list .nav-link{
  
 //     _border-color: $primaryLightGrey;
