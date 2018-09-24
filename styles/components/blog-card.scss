@@ -4,16 +4,22 @@
     font-weight: 900;
   }
   
+  .workPostImg{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
+    position: absolute;
+    margin-top: -10px;
+  }
+
   .blog-card {
     border-radius: 2px;
     display: inline-block;
     margin: 1rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
   
   .blog-card:hover {
-    box-shadow: 0 14px 28px pink, 0 10px 10px pink;
+    box-shadow: 0 6px 6px $secondaryLight, 0 6px 9px $secondaryLight;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
 

@@ -32,7 +32,7 @@
                         <ul>
                             <li>C#/.Net</li>
                             <li>PHP</li>
-                            <li>Need something</li>
+                            <!-- <li>Need something</li> -->
                         </ul>
                     </div>
                 </div>
@@ -84,20 +84,19 @@
                 <!--JS Content-->
                 <?php buildPostExcerpt('javascript'); ?>
             </div>
-            <div class="tab-pane fade" id="data-exp" role="tabpanel" aria-labelledby="data-exp-tab">.My data stuff..
-
+            <div class="tab-pane fade" id="data-exp" role="tabpanel" aria-labelledby="data-exp-tab">
+                <?php buildPostExcerpt('data'); ?>
             </div>
-            <div class="tab-pane fade" id="saas-exp" role="tabpanel" aria-labelledby="saas-exp-tab">.My saas stuff..
-
+            <div class="tab-pane fade" id="saas-exp" role="tabpanel" aria-labelledby="saas-exp-tab">
+                <?php buildPostExcerpt('saas'); ?>
             </div>
         </div>
     </div>
 
     <div class="row container">
-        <section class="col bg-primaryMid">
+        <section class="col bg-primaryMid rounded-top">
             <h3 class="text-white mt-4">In the Community...</h3>
-            <p class="text-white">“It’s easy to make a buck.  It’s a lot tougher to make a difference. ” – Tom Brokaw</p>
-
+            <p class="text-white"><i>“It’s easy to make a buck.  It’s a lot tougher to make a difference. ”</i> – Tom Brokaw</p>
             <!-- Card Narrower -->
             <div class="card card-cascade narrower mb-3">
                 <!-- Card image -->
@@ -109,7 +108,7 @@
                 <!-- Card content -->
                 <div class="card-body card-body-cascade">
                     <!-- Title -->
-                    <h4 class="card-title">Dancer &amp; Relationship Builder</h4>
+                    <h4 class="card-title">Development Associate &amp; Dancer</h4>
                     <!-- Text -->
                     <p class="card-text">
                         Volunteering with their data and CRM needs to help more people hear about their incredible mission - 
@@ -119,7 +118,6 @@
                 </div>
             </div>
             <!-- Card Narrower -->
-
             <!-- Card Narrower -->
             <div class="card card-cascade narrower mb-3">
                 <!-- Card image -->
@@ -194,39 +192,33 @@
     }
 
     function buildPostExcerpt($category){
-        $args = array(
-            'post_type'         => 'post',
-            'posts_per_page'    => '10',
-            'category_name' => $category
-        );
 
-        $the_query = new WP_Query( $args ); 
-        // The Loop that actually loops posts
-        //  Use this maybe for experience file:///Users/ryanallis/Downloads/ExpandingGridItemAnimation/index.html 
-        if ( $the_query->have_posts()) {
-            echo '<div class="row">';
-                    while ( $the_query->have_posts() ) {
-                        $the_query->the_post();
-                        $post_min_description = get_the_excerpt();
-                        $post_full_description = get_the_content();
-                        $post_link = get_the_permalink();
-                        $post_URL = '<a href="' . $post_link . '#">Read more</a>';
-                        $post_IMG = get_the_post_thumbnail_url();
-                        $post_title = get_the_title();
-                        $description_trimmed = mb_strimwidth($post_full_description, 0, 150, '...<br />');
-                        //Rendered HTML below
-                        echo '<a href="' . $post_link . '#">';
-                        echo '<div class="card view overlay mr-3" style="width: 18rem;">';
-                        echo    '<img class="card-img-top" src="' . $post_IMG . '" alt="TODO Change to image name">';
-                        echo    '<div class="card-body">';
-                        echo        '<h3>' . $post_title . '</h3>';
-                        echo        '<p>' . $description_trimmed . $post_URL . '</p>';
-                        echo    '</div>';
-                        echo '</div>';
-                        echo '</a>';
-                    }
-            echo '</div>';
+        $blogPosts = getPosts($category, 3);
+
+        echo '<div class="row">';
+        foreach($blogPosts as $blogPost){
+            $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
+            $post_min_desc_parsed = explode("Features", $blogPost -> full_description, 2);
+            $post_min_description = $post_min_desc_parsed[0];
+            //var_dump($blogPost -> tags_formatted);
+
+            echo     '<a class="col-md-5 mr-5 mb-4 p-0" href="' . $blogPost -> link . '#">';
+            echo        '<section class="container bg-white p-0 blog-card">';
+            echo            '<div class="row">';
+            echo                '<div class="col-4 p-0">';
+            echo                    '<img class="card-img-top col rounded workPostImg p-0" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
+            echo                '</div>';
+            echo                '<div class="col-8 pt-3">';
+            echo                    '<h3 class="">' . $blogPost -> title . '</h3>';
+            echo                    '<p class="mb-0 text-primaryDarkGrey">' . $post_min_description . '</p>';
+            //echo                    '<p>' . $blogPost -> tags_formatted . '</p>';
+            echo                '</div>';
+            echo            '</div>';
+            echo        '</section>';
+            echo     '</a>';
         }
+        echo '</div>';
+
     }
     get_footer(); 
 ?>

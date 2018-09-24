@@ -38,7 +38,7 @@ $theme-colors: (
 //  "info": #ffc1e3,
 // $primaryLight: #8eacbb;
 // $primaryMid: #607d8b;
-// $primaryDark: #34515e;
+// $primaryDark: #607d8b;
 
     $primaryDark :#323C5A;
     $primaryMid: #607d8b;
@@ -67,7 +67,6 @@ $primaryDarkGrey: #707070;
 
 @import ".././node_modules/bootstrap/scss/bootstrap";
 @import "./components/header";
-@import "./components/blog-card";
 @import "./components/bubbles";
 @import "./components/button-on-home-page";
 @import "./components/home";

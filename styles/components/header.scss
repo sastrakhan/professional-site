@@ -1,5 +1,5 @@
 
-$header-sm-height: 11vh;
+$header-sm-height: 10vh;
 $header-lg-height: 100vh;
 $header-bg: $primary;
 $menu-width: 250px!default;
@@ -15,7 +15,6 @@ header.lg-header-height {
 
 header.sm-header-height {
     height: $header-sm-height;
-    _background: green;
 }
 
 .lg-header-margin{
@@ -23,7 +22,7 @@ header.sm-header-height {
 }
 
 .sm-header-margin{
-    margin-top: $header-sm-height; 
+    margin-top: $header-sm-height + 1; 
 }
 
 .lg-header {
@@ -42,7 +41,7 @@ header {
 }
 
 .bgbg-primaryDark{
-    background: $primaryDark;
+    background-color: $primaryDark;
     background: darken(saturate(rgba($primaryDark, 0.85), 15%), 10%);
 }
 

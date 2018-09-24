@@ -16,6 +16,29 @@
             
         <div>
 </form>
+echo '<a href="' . $post_link . '#">';
+                        echo '<div class="card view overlay mr-3" style="width: 18rem;">';
+                        echo    '<img class="card-img-top" src="' . $post_IMG . '" alt="TODO Change to image name">';
+                        echo    '<div class="card-body">';
+                        echo        '<h3>' . $post_title . '</h3>';
+                        echo        '<p>' . $post_min_description . '</p>';
+                        echo    '</div>';
+                        echo '</div>';
+                        echo '</a>';
+                        
+                        echo '<a href="' . $post_link . '#">';
+                        echo '<div class="card view overlay mr-3" style="width: 18rem;">';
+                        echo    '<section class="container">';
+                        echo        '<div class="card-body col">';
+                        echo            '<img class="card-img-top col" src="' . $post_IMG . '" alt="TODO Change to image name">';
+                        echo        '</div>';
+                        echo        '<div class="card-body col">';
+                        echo            '<h3>' . $post_title . '</h3>';
+                        echo            '<p>' . $post_min_description . '</p>';
+                        echo        '</div>';
+                        echo    '</section>';
+                        echo '</div>';
+                        echo '</a>';
    
    
    <!--WP CREATED MENU FROM HEADER-->

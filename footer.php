@@ -32,7 +32,7 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse">
                             <div class="panel-body in">
-                                <?php echo do_shortcode('[contact-form-7 id="97" title="Footer Form"]'); ?>
+                                <?php echo do_shortcode('[contact-form-7 id="96" title="Footer Form"]'); ?>
                             </div>
                         </div>
                     </div>

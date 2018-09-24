@@ -19,7 +19,8 @@
 
 #project-list .nav-link {
     color: inherit;  
-    border-color: $primaryLightGrey $primaryLightGrey transparent;    
+    border-color: $primaryLightGrey $primaryLightGrey transparent;   
+    min-height: 136px; 
 }
 
 #project-list {
@@ -57,6 +58,35 @@
     min-height: 160px;
 }
 
+.card-img-top{
+    height: 175px;
+    width: 160px;
+}
+
+.sean-blog-card-title{
+    text-align: center;
+    font-weight: 900;
+  }
+  
+  .workPostImg{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
+    position: absolute;
+    margin-top: 10px;
+  }
+
+  .blog-card {
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .blog-card:hover {
+    box-shadow: 0 6px 6px $secondaryLight, 0 6px 9px $secondaryLight;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
 .code4bmore-image{
     @extend .bdcp-image;
     background-image: url("./images/sean-astrakhan-codebmore.png");
@@ -84,6 +114,9 @@
     margin-left: 40%;
     border-radius: 100%;
 }
+
+
+
 // #project-list .nav-link{
  
 //     _border-color: $primaryLightGrey;

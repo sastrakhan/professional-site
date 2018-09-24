@@ -7589,8 +7589,7 @@ header.lg-header-height {
   height: 100vh; }
 
 header.sm-header-height {
-  height: 11vh;
-  _background: green; }
+  height: 10vh; }
 
 .lg-header-margin {
   margin-top: 100vh; }
@@ -7612,7 +7611,7 @@ header {
   background: url("./images/sean-astrakhan-octopus.png"); }
 
 .bgbg-primaryDark {
-  background: #323C5A;
+  background-color: #323C5A;
   background: rgba(25, 35, 64, 0.85); }
 
 header,
@@ -7640,21 +7639,6 @@ header,
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity .75s linear; }
-
-.sean-blog-card-title {
-  text-align: center;
-  font-weight: 900; }
-
-.blog-card {
-  border-radius: 2px;
-  display: inline-block;
-  margin: 1rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-
-.blog-card:hover {
-  box-shadow: 0 14px 28px pink, 0 10px 10px pink;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 a.div {
   color: inherit; }
@@ -7793,7 +7777,8 @@ a.div {
 
 #project-list .nav-link {
   color: inherit;
-  border-color: #cfcfcf #cfcfcf transparent; }
+  border-color: #cfcfcf #cfcfcf transparent;
+  min-height: 136px; }
 
 #project-list {
   border-bottom: 1px solid #323C5A; }
@@ -7823,6 +7808,30 @@ a.div {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 160px; }
+
+.card-img-top {
+  height: 175px;
+  width: 160px; }
+
+.sean-blog-card-title {
+  text-align: center;
+  font-weight: 900; }
+
+.workPostImg {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  margin-top: 10px; }
+
+.blog-card {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.blog-card:hover {
+  box-shadow: 0 6px 6px #ffc1e3, 0 6px 9px #ffc1e3;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 .code4bmore-image {
   background-image: url("./images/sean-astrakhan-codebmore.png"); }
@@ -7867,7 +7876,7 @@ a:hover {
   color: #bf5f82; }
 
 main {
-  _margin-top: 89vh; }
+  _margin-top: 90vh; }
 
 p {
   font-family: 'Noto Serit', serif;

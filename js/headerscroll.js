@@ -14,7 +14,7 @@
 			$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
 		},2000);
 
-		//btn-home-container
+		//Button on landing page
 		$("#btn-home").click(function () {
 			//Needs twice in a row or doesn't work
 			$('html').animate({ scrollTop: '+=5px'}, 100);
@@ -47,7 +47,7 @@
 			
 			//We need to keep the header as holding the background image to improve scrolling appearance
 			setTimeout(function(){
-				$("header").css("background", "none");
+				//$("header").css("background", "none");
 			},600);
 		} 
 		//TODO:  Figure out how to enable this stuff

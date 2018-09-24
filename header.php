@@ -53,6 +53,7 @@
                         <aside class="mb-5">
                             <h1>Hi, I'm Sean,</h1>
                             <h4 class="NotoFont">I like to code, listen, and give unsolicted advice.</h4>
+                            <h4 class="NotoFont">I'm having a hard time thinking of what else to put here.</h4>
                         </aside>
                         <article>
                             <!-- <p>
