@@ -2,17 +2,26 @@
 
 	//Only home page should start with header large
 	$(document).ready(function() {
-		$("header").removeClass("sm-header-height").addClass("lg-header-height");
-		$(".content-area").removeClass("sm-header-margin").addClass("lg-header-margin");
+		var pathname = window.location.href; // Returns path only
 
-		//Show header content like "hi am" text
-		$("#large-header").addClass("d-block");
-		$(".navbar").addClass("navHide");
+		if(pathname.includes("skills")){
+			var pageHeight = $(document).height();
+    		$('html, body').animate({ scrollTop: 10 }, 50);
+		}
+		else{
+			$("header").removeClass("sm-header-height").addClass("lg-header-height");
+			$(".content-area").removeClass("sm-header-margin").addClass("lg-header-margin");
+	
+			//Show header content like "hi am" text
+			$("#large-header").addClass("d-block");
+			$(".navbar").addClass("navHide");
+	
+			//Fade in welcome button
+			setTimeout(function(){
+				$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
+			},2000);	
+		}
 
-		//Fade in welcome button
-		setTimeout(function(){
-			$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
-		},2000);
 
 		//Button on landing page
 		$("#btn-home").click(function () {
@@ -21,7 +30,7 @@
 			$('html').animate({ scrollTop: '+=5px'}, 100);
 		});
 
-		//Original code:  https://www.bootply.com/101026
+		//Scroll contact form in footer Original code:  https://www.bootply.com/101026
 		$('#accordion').on('shown.bs.collapse', function () {
 			var panel = $(this).find('.in');	
 			$('html, body').animate({
@@ -29,7 +38,11 @@
 			}, 500);
 			
 		});
-	})
+	});
+
+	$(window).on("load", function() {
+		//https://stackoverflow.com/questions/544993/official-way-to-ask-jquery-wait-for-all-images-to-load-before-executing-somethin
+	});
 
 	$(document).on("scroll", function() {
 		//console.log($(document).scrollTop(), "header scrolling firing");

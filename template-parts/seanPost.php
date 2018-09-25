@@ -24,8 +24,9 @@
 					'link' => get_the_permalink(),
 					'imgURL' => get_the_post_thumbnail_url(),
 					'title' => get_the_title(),
-					'dateCreated' => get_the_date(),
-					'tags_formatted' => get_the_tag_list('<button type="button" class="p-1 btn btn-info">',   '</button> <button type="button" class="p-1 btn btn-info">'   ,   '</button>')
+					'dateCreated' => get_the_date(), 
+					'tags' => get_the_tags(),
+					'tags_formatted' => get_the_tag_list('<button type="button" class="p-1 btn btn-primaryMid">',   '</button> <button type="button" class="p-1 btn btn-primaryMid">'   ,   '</button>')
 				);
 		
 				$seansPost = new seanPost();
@@ -39,5 +40,20 @@
 		}
 
         return $allPosts;
-    }
+	}
+	
+	function buildTagBtns($post_tags){
+		$anchorBtns = '';
+
+		if ($post_tags) {
+			foreach($post_tags as $tag) {
+				$anchorBtns .= '<button type="button" class="p-1 btn-primaryMid">' .
+										$tag -> name .
+								'</button>'; 
+				$anchorBtns .= ' ';
+			}
+		 };
+		
+		return $anchorBtns;
+	}
 ?>

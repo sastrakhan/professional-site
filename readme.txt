@@ -5,3 +5,8 @@ sass --watch ./styles/style.scss:style.css
 
 debug.log
 ./wp-content/debug.log
+
+Todo:
+PDF resume 
+screenshots all over
+mobile

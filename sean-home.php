@@ -3,6 +3,7 @@
  
 <main class="container content-area">
     <div id="primary" class="row-m-t"> 
+        <a href="#testing"></a>
         <blockquote id="homeTopQuote" style="margin-top:10%;" class="blockquote col-md-6">
                     <h3 class="NotoFont text-primaryDark">
                     <small><i class="small fa fa-quote-left"></i></small>
@@ -25,19 +26,29 @@
         </aside>
             
         <ul id="project-list" class="nav nav-tabs row mt-2" id="myTab" role="tablist">
-            <li class="nav-item col-6 col-md-3">
+            <li class="nav-item col-6">
                 <div class="nav-link active" aria-selected="true" id="backend-tab" data-toggle="tab" href="#backend" role="tab" aria-controls="home">
-                    <div>
-                        <h2>Back End</h2>
-                        <ul>
-                            <li>C#/.Net</li>
-                            <li>PHP</li>
-                            <!-- <li>Need something</li> -->
-                        </ul>
-                    </div>
+                    <section class="row">
+                        <div class="col-6">
+                            <h2>Back End</h2>
+                            <ul>
+                                <li>C#/.Net</li>
+                                <li>PHP</li>
+                                <!-- <li>Need something</li> -->
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Javascript</h2>
+                            <ul>
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>Handle Bars</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
             </li>
-            <li class="nav-item col-6 col-md-3">
+            <!-- <li class="nav-item col-6 col-md-3">
                 <div class="nav-link" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">
                     <div>
                         <h2>Javascript</h2>
@@ -48,20 +59,30 @@
                         </ul>
                     </div>
                 </div>
-            </li>
-            <li class="nav-item col-6 col-md-3">
+            </li> -->
+            <li class="nav-item col-6">
                 <div class="nav-link" id="data-exp-tab" data-toggle="tab" href="#data-exp" role="tab" aria-controls="data-exp" aria-selected="false">
-                    <div>
-                        <h2>Data</h2>
-                        <ul>
-                            <li>SQL</li>
-                            <li>SSIS</li>
-                            <li>Power BI</li>
-                        </ul>
-                    </div>
+                    <section class="row">
+                            <div class="col-6">
+                                <h2>Data</h2>
+                                <ul>
+                                    <li>SQL</li>
+                                    <li>SSIS</li>
+                                    <li>Power BI</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h2>SAAS</h2>
+                                <ul>
+                                    <li>CRM</li>
+                                    <li>WordPress</li>
+                                    <li>SharePoint</li>
+                                </ul>
+                            </div>
+                    </section>
                 </div>
             </li>
-            <li class="nav-item col-6 col-md-3">
+            <!-- <li class="nav-item col-6 col-md-3">
                 <div class="nav-link" id="saas-exp-tab" data-toggle="tab" href="#saas-exp" role="tab" aria-controls="saas-exp" aria-selected="false">
                     <div>
                         <h2>SAAS</h2>
@@ -72,23 +93,23 @@
                         </ul>
                     </div>
                 </div>
-            </li>
+            </li> -->
         </ul>
 
         <div class="tab-content" id="myTabContent" style="padding: 3%;">
             <div class="tab-pane fade show active" id="backend" role="tabpanel" aria-labelledby="backend-tab">
                 <!--Serverside Content-->
-                <?php buildPostExcerpt('serverside'); ?>
+                <?php buildPostExcerpt(array ( 0 => "serverside", 1 => "javascript")); ?>
             </div>
             <div class="tab-pane fade" id="js" role="tabpanel" aria-labelledby="js-tab">
                 <!--JS Content-->
-                <?php buildPostExcerpt('javascript'); ?>
             </div>
             <div class="tab-pane fade" id="data-exp" role="tabpanel" aria-labelledby="data-exp-tab">
-                <?php buildPostExcerpt('data'); ?>
+                <!--Data Content-->
+                <?php buildPostExcerpt(array ( 0 => "data", 1 => "saas")); ?>
             </div>
             <div class="tab-pane fade" id="saas-exp" role="tabpanel" aria-labelledby="saas-exp-tab">
-                <?php buildPostExcerpt('saas'); ?>
+                <!--SAAS Content-->
             </div>
         </div>
     </div>
@@ -152,39 +173,41 @@
  
 <?php 
     function createBlogList(){
-        $blogPosts = getPosts('Uncategorized', 3);
+        $blogPosts = getPosts(array ( 0 => "Uncategorized"), 3);
 
         foreach($blogPosts as $blogPost){
             $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
             $description_trimmed = mb_strimwidth($blogPost -> full_description, 0, 150, '...<br />');
 
-            echo '<div class="row">';
-            echo    '<div class="col-2 wrapper">';
-            echo       '<img class="rounded-circle img-responsive circle" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
+            echo    '<div class="row">';
+            echo       '<div class="col-2 wrapper">';
+            echo          '<img class="rounded-circle img-responsive circle" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
+            echo       '</div>';
+            echo       '<div class="offset-1 col-8">';
+            echo         '<a href="' . $blogPost -> link . '#">';
+            echo           '<h4 class="text-primaryMid">' . $blogPost -> title . '</h4>';
+            echo           '<p>' . $description_trimmed . $post_URL . '</p>';
+            echo           '<div class="container row justify-content-between">';
+            echo               '<div class"col-4">';
+            echo                   '<p class="text-muted"><i>' . $blogPost -> dateCreated . '</i></p>';
+            echo               '</div>';
+            echo               '<div class"col-4">';
+            //echo                '<p>' . $blogPost -> tags_formatted . '</p>';
+            echo               '</div>';
+            echo           '</div>';
+            echo        '</a>';
+            echo       '</div>';
             echo    '</div>';
-            echo    '<div class="offset-1 col-8">';
-            echo        '<h4 class="text-primaryMid">' . $blogPost -> title . '</h4>';
-            echo        '<p>' . $description_trimmed . $post_URL . '</p>';
-            echo        '<div class="container row justify-content-between">';
-            echo            '<div class"col-4">';
-            echo                '<p class="text-muted"><i>' . $blogPost -> dateCreated . '</i></p>';
-            echo            '</div>';
-            echo            '<div class"col-4">';
-            echo                '<p>' . $blogPost -> tags_formatted . '</p>';
-            echo            '</div>';
-            echo        '</div>';
-            echo    '</div>';
-            echo '</div>';
         }
     }
 
-    function getPosts($categoryName, $amount){
+    function getPosts($categoryNames, $amount){
         require_once('template-parts/seanPost.php');
 
         $args = array(
             'post_type'         => 'post',
             'posts_per_page'    => $amount,
-            'category_name' => $categoryName
+            'category_name' =>  implode (", ", $categoryNames)
         );
 
         $the_query = new WP_Query( $args ); 
@@ -193,14 +216,14 @@
 
     function buildPostExcerpt($category){
 
-        $blogPosts = getPosts($category, 3);
+        $blogPosts = getPosts($category, 10);
 
         echo '<div class="row">';
         foreach($blogPosts as $blogPost){
             $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
             $post_min_desc_parsed = explode("Features", $blogPost -> full_description, 2);
             $post_min_description = $post_min_desc_parsed[0];
-            //var_dump($blogPost -> tags_formatted);
+            $tags_formatted = buildTagBtns($blogPost -> tags);
 
             echo     '<a class="col-md-5 mr-5 mb-4 p-0" href="' . $blogPost -> link . '#">';
             echo        '<section class="container bg-white p-0 blog-card">';
@@ -211,7 +234,7 @@
             echo                '<div class="col-8 pt-3">';
             echo                    '<h3 class="">' . $blogPost -> title . '</h3>';
             echo                    '<p class="mb-0 text-primaryDarkGrey">' . $post_min_description . '</p>';
-            //echo                    '<p>' . $blogPost -> tags_formatted . '</p>';
+            echo                     '<div class="float-right">' . $tags_formatted . '</div>';
             echo                '</div>';
             echo            '</div>';
             echo        '</section>';

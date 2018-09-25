@@ -17,6 +17,10 @@ header.sm-header-height {
     height: $header-sm-height;
 }
 
+.navbar{
+    height: $header-sm-height;
+}
+
 .lg-header-margin{
     margin-top: $header-lg-height; 
 }
@@ -38,6 +42,7 @@ header {
     z-index: 10;
     width: 100%;
     background: url("./images/sean-astrakhan-octopus.png");
+
 }
 
 .bgbg-primaryDark{
