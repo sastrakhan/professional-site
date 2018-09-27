@@ -1,3 +1,14 @@
+
+<section class="row post-Portfolio">
+    <div class="col-md-8">
+        
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</section>
+
+
 <form class="form-group">
             <div>
                 <label> Your Email </label>

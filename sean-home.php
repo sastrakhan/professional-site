@@ -177,7 +177,7 @@
 
         foreach($blogPosts as $blogPost){
             $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
-            $description_trimmed = mb_strimwidth($blogPost -> full_description, 0, 150, '...<br />');
+            $description_trimmed = mb_strimwidth($blogPost -> min_description, 0, 150, '...<br />');
 
             echo    '<div class="row">';
             echo       '<div class="col-2 wrapper">';
@@ -221,7 +221,7 @@
         echo '<div class="row">';
         foreach($blogPosts as $blogPost){
             $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
-            $post_min_desc_parsed = explode("Features", $blogPost -> full_description, 2);
+            $post_min_desc_parsed = explode("Features", $blogPost -> min_description, 2);
             $post_min_description = $post_min_desc_parsed[0];
             $tags_formatted = buildTagBtns($blogPost -> tags);
 

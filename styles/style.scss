@@ -65,7 +65,9 @@ $primaryDarkGrey: #707070;
 // #bf5f82
 
 
+
 @import ".././node_modules/bootstrap/scss/bootstrap";
+@import "./components/mixins/_mixins";
 @import "./components/header";
 @import "./components/bubbles";
 @import "./components/button-on-home-page";
@@ -95,6 +97,15 @@ p {
     //font-size: 14px;
     line-height: 23px;
     margin: 0 0 23px 0;
+}
+
+.boxShadow{
+    @include boxShadow();
+}
+
+.post-Portfolio{
+    margin-bottom: 2%;
+    border-bottom: 2px solid #607d8b;
 }
 
 .NotoFont {
