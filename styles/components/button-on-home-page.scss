@@ -1,9 +1,7 @@
 //color/ui color variables
 $white: #ececec;
-$red1: $primaryLightGrey;
-$red2: $primaryDarkGrey ;
-$colorPrimary: $red1;
-$colorSecondary: $red2;
+$colorPrimary: $primaryLightGrey;
+$colorSecondary: $primaryDarkGrey;
 $cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 //split button mixin
@@ -18,6 +16,44 @@ $cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	visibility: visible;
 	transition: visibility 3.5s, opacity 3.5s linear;
 }
+
+.btn-loading-home-page {
+	color: $secondaryLight;
+	width: 350px;
+	position: absolute;
+	left: 40%;//45%;
+	bottom: -100%;//0;
+	letter-spacing: 0.15em;
+	margin: 0 auto;
+	padding: 1rem 2.5rem;
+	background: transparent;
+	outline: none;
+	font-size: 38px;
+	transition: all 0.5s $cubic-bezier 0.15s;
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		height: 40%;
+		width: 10%;
+		transition: all 0.5s $cubic-bezier;
+		z-index: -2;
+		border-radius: 50%;
+		//animation: grow 1s infinite;
+	}
+	&::before {
+		background-color: $colorPrimary;
+		top: -0.75rem;
+		left: 0.5rem;
+		animation: top 2s $cubic-bezier 0.25s infinite alternate;
+	}
+	&::after {
+		background-color: $colorSecondary;
+		top: 3rem;
+		left: 13rem;
+		animation: bottom 2s $cubic-bezier 0.5s infinite alternate;
+	}
+}	
 
 @mixin btn__split($foregroundColor, $backgroundColor, $textColor) {
 	.btn-home-page {

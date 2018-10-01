@@ -14,6 +14,16 @@
     <?php wp_head(); ?>
 </head>
 
+<div id="loadingAside" class="row">
+   <div class="col-sm-12 my-auto">
+     <div id="loadingContent">
+      <h1 class="text-center text-white">Hi, I'm Sean</h1>
+      <h4 class="btn-loading-home-page">One sec...</h4>
+    </div>
+   </div>
+</div>
+
+
 <header class="small-header lg-header">
     <nav class="navbar navbar-expand navbar-dark bgbg-primaryDark">
         <div class="container">

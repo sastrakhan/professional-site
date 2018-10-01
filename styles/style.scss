@@ -20,9 +20,14 @@ $theme-colors: (
     // "primaryMid" : #607d8b,
     // "primaryDark": #34515e,
 
-    "primaryDark" :#323C5A,
-    "primaryMid" : #607d8b,
-    "primaryLight": #8eacbb,
+    // "primaryDark" :#323C5A,
+    // "primaryMid" : #607d8b,
+     //"primaryLight": #8eacbb,
+
+
+    "primaryDark" :#2c2c54,
+    "primaryMid": #40407a,
+    "primaryLight": #706fd3,
 
     "secondaryLight" : #ffc1e3,
     "secondaryDark" : #bf5f82,
@@ -40,9 +45,9 @@ $theme-colors: (
 // $primaryMid: #607d8b;
 // $primaryDark: #607d8b;
 
-    $primaryDark :#323C5A;
-    $primaryMid: #607d8b;
-    $primaryLight: #8eacbb;
+    $primaryDark :#2c2c54;
+    $primaryMid: #40407a;
+    $primaryLight: #706fd3;
 
 $secondaryLight : #ffc1e3;
 $secondaryDark : #bf5f82;
@@ -103,9 +108,12 @@ p {
     @include boxShadow();
 }
 
-.post-Portfolio{
+
+hr.post-Portfolio {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $primaryLightGrey, rgba(0, 0, 0, 0));
     margin-bottom: 2%;
-    border-bottom: 2px solid #607d8b;
 }
 
 .NotoFont {
@@ -113,7 +121,7 @@ p {
 }
 
 .btn a {
-    color: $gray-600;
+    color: inherit;
 }
 
 .btn-primaryMid a {

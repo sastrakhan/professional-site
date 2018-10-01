@@ -3,12 +3,17 @@
 	//Only home page should start with header large
 	$(document).ready(function() {
 		var pathname = window.location.href; // Returns path only
+		console.log("headerscroll");
 
 		if(pathname.includes("skills")){
 			var pageHeight = $(document).height();
-    		$('html, body').animate({ scrollTop: 10 }, 50);
+			$('html, body').animate({ scrollTop: 10 }, 50);
+			$( "#loadingAside" ).hide( "slow");
 		}
 		else{
+			$( "#loadingAside" ).show();
+			$("header").hide();
+
 			$("header").removeClass("sm-header-height").addClass("lg-header-height");
 			$(".content-area").removeClass("sm-header-margin").addClass("lg-header-margin");
 	
@@ -16,10 +21,6 @@
 			$("#large-header").addClass("d-block");
 			$(".navbar").addClass("navHide");
 	
-			//Fade in welcome button
-			setTimeout(function(){
-				$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
-			},2000);	
 		}
 
 
@@ -41,7 +42,13 @@
 	});
 
 	$(window).on("load", function() {
-		//https://stackoverflow.com/questions/544993/official-way-to-ask-jquery-wait-for-all-images-to-load-before-executing-somethin
+		$( "#loadingAside" ).hide( "slow");
+		$("header").show("slow");
+
+		//Fade in welcome button
+		setTimeout(function(){
+			$("#btn-home-container").removeClass("btn-home-hide").addClass("btn-home-show");
+		},2000);	
 	});
 
 	$(document).on("scroll", function() {

@@ -33,12 +33,12 @@
     }
 
     function enqueue_sean_scripts_js(){
-        wp_enqueue_script( 'hamburger-menu', get_template_directory_uri() . '/js/hamburger-menu.js', array('jquery'), null, false );
+        wp_enqueue_script( 'sean-scripts', get_template_directory_uri() . '/js/sean-scripts.js', array('jquery'), null, false );
     }
     //Executes all scripts above
     add_action( 'wp_enqueue_scripts', 'enqueue_child_theme_styles', PHP_INT_MAX);
     add_action( 'wp_enqueue_scripts', 'enqueue_header_scroll_js');
-    //add_action('wp_enqueue_scripts', 'enqueue_sean_scripts_js'); //May delete if hamburger isn't used or repurpose for basic js files
+    add_action('wp_enqueue_scripts', 'enqueue_sean_scripts_js'); //May delete if hamburger isn't used or repurpose for basic js files
 
 
     function wpb_custom_new_menu() {
