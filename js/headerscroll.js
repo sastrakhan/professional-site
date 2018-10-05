@@ -29,10 +29,8 @@
 		//Button on landing page
 		$("#btn-home").click(function () {
 			//Needs twice in a row or doesn't work
-
 			$('html').animate({ scrollTop: '+=5px'}, 100);
 			$('html').animate({ scrollTop: '+=5px'}, 100);
-
 			//Safari doesn't listen to html so you need body
 			$('body').animate({ scrollTop: '+=5px'}, 100);
 			$('body').animate({ scrollTop: '+=5px'}, 100);

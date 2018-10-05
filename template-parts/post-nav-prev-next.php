@@ -2,8 +2,12 @@
 <?php
     function sean_the_post_navigation( $args = array() ) {
         $args = wp_parse_args( $args, array(
-            'prev_text'          => '<span class="nav-previous"><i class="fa fa-arrow-circle-left"></i> Previous:</span> <i>%title.</i>',
-            'next_text'          => '<i>%title.</i> <span class="nav-next"> Next: <i class="fa fa-arrow-circle-right secondaryLight"></i>',
+            'prev_text'          => '<h4><i class="fa fa-lg fa-arrow-circle-left"></i> Previous:
+                                        <span class="text-primaryDarkGrey"><i>%title.</i>
+                                    </span></h4>',
+            'next_text'          => '<h4><span class="text-primaryDarkGrey">
+                                        <i>%title.</i>
+                                    </span> Next: <i class="fa fa-lg fa-arrow-circle-right secondaryLight"></i></h4>',
             'in_same_term'       => true,
             // 'excluded_terms'     => '',
             // 'taxonomy'           => 'category',
@@ -13,7 +17,7 @@
         $navigation = '';
 
         $previous = get_previous_post_link(
-            '<div>%link</div>',
+            '<div class="nav-previous">%link</div>',
             $args['prev_text'],
             $args['in_same_term']//,
             // $args['excluded_terms'],
@@ -21,7 +25,7 @@
         );
 
         $next = get_next_post_link(
-            '<div class="">%link</div>',
+            '<div class="nav-next">%link</div>',
             $args['next_text'],
             $args['in_same_term']//,
             // $args['excluded_terms'],

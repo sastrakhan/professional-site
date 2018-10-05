@@ -1,5 +1,5 @@
 
 <?php
-    echo '<h3>' . get_the_title() . '</h3>';  
+    echo '<h1 class="post-Portfolio-title">' . get_the_title() . '</h1>';  
     the_content();
 ?>

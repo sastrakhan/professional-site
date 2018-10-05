@@ -7594,6 +7594,10 @@ header.sm-header-height {
 .navbar {
   height: 10vh; }
 
+.small-header .nav-link {
+  color: #cfcfcf !important;
+  font-size: 115%; }
+
 .lg-header-margin {
   margin-top: 100vh; }
 
@@ -7661,6 +7665,9 @@ header,
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 768px) {
+  .small-header .nav-link {
+    font-size: 100%; }
+
   .sean-logo {
     height: 55px; }
 
@@ -7829,6 +7836,39 @@ a.div {
 @media only screen and (max-width: 550px) {
   .btn-home-page {
     bottom: 35%; } }
+.card-img-top {
+  height: 175px;
+  width: 175px; }
+
+.sean-blog-card-title {
+  text-align: center;
+  font-weight: 900; }
+
+.workPostImg {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  margin-top: 10px; }
+
+.blog-card-row {
+  margin-right: 3rem;
+  margin-bottom: 1.5rem;
+  padding: 0; }
+
+.blog-card {
+  border-radius: 2px;
+  min-height: 240px;
+  display: inline-block;
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.blog-card:hover {
+  box-shadow: 0 6px 6px #cfcfcf, 0 6px 9px #cfcfcf;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+@media only screen and (max-width: 550px) {
+  #blogPageHeader {
+    margin-top: 20%; } }
 .page-banner {
   font-style: italic;
   text-align: center;
@@ -7924,8 +7964,8 @@ a.div {
 .wrapper > .circle {
   position: absolute;
   border: 3px solid #40407a;
-  width: 85%;
-  height: 50%;
+  width: 100px;
+  height: 100px;
   top: 50%;
   margin-top: -60%;
   _left: 50%;
@@ -7988,15 +8028,13 @@ a.div {
   .wrapper > .circle {
     position: absolute;
     border: 3px solid #40407a;
-    width: 125%;
-    height: 50%;
     top: 50%;
     margin-top: -100%;
     margin-left: 0%;
     border-radius: 100%; }
 
   #homeTopQuote {
-    margin-top: 10%; }
+    margin-top: 5%; }
 
   .btn-resume, .btn-resume-footer {
     margin-bottom: 5%; } }
@@ -8017,39 +8055,108 @@ footer {
   background-size: 400px 140px;
   background-color: #35465F; }
 
-.card-img-top {
-  height: 175px;
-  width: 175px; }
-
-.sean-blog-card-title {
-  text-align: center;
-  font-weight: 900; }
-
-.workPostImg {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
-  position: absolute;
-  margin-top: 10px; }
-
-.blog-card-row {
-  margin-right: 3rem;
-  margin-bottom: 1.5rem;
-  padding: 0; }
-
-.blog-card {
-  border-radius: 2px;
-  min-height: 240px;
-  display: inline-block;
-  margin: 1rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 6px 9px rgba(0, 0, 0, 0.23);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-
-.blog-card:hover {
-  box-shadow: 0 6px 6px #cfcfcf, 0 6px 9px #cfcfcf;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.post-Portfolio ul li {
+  font-family: 'Noto Serit', serif;
+  font-size: 115%; }
+.post-Portfolio p {
+  font-size: 115%;
+  font-family: 'Oxygen', sans-serif;
+  color: #707070; }
 
 @media only screen and (max-width: 550px) {
-  #blogPageHeader {
-    margin-top: 20%; } }
+  .post-Portfolio ul li {
+    font-size: 100%; }
+  .post-Portfolio p {
+    font-size: 100%; }
+
+  .post-Portfolio-title {
+    font-size: 175%; } }
+hr.post-Portfolio {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #cfcfcf, rgba(0, 0, 0, 0));
+  margin-bottom: 2%; }
+
+/* general styles 
+https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
+*/
+.my-journey {
+  height: 100%;
+  width: 100%; }
+
+/* padded section */
+.pad-section {
+  padding: 50px 0; }
+
+.pad-section img {
+  width: 100%; }
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+
+.text-vcenter h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0; }
+
+/* additional sections */
+#my-journey #home {
+  background: url("./images/journey/bmore.jpg") no-repeat center center fixed;
+  display: table;
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: whitesmoke; }
+
+#my-journey #china {
+  background: url("./images/journey/chinawall.jpg") no-repeat center center fixed;
+  display: table;
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: whitesmoke; }
+
+#services {
+  background-color: #306d9f;
+  color: #ffffff; }
+
+#services .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px; }
+
+#information {
+  background: url(../images/estate.jpg) no-repeat center center fixed;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#information .panel {
+  opacity: 0.85; }
+
 body {
   font-family: 'Oxygen', sans-serif; }
 
@@ -8072,17 +8179,15 @@ p {
 .boxShadow {
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 766px) {
   .boxShadow {
     width: 100%;
     height: 100%;
-    margin-bottom: 3%; } }
-hr.post-Portfolio {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #cfcfcf, rgba(0, 0, 0, 0));
-  margin-bottom: 2%; }
+    margin-bottom: 3%; }
 
+  .p-mobile-Image {
+    padding: 10%;
+    margin-top: 10%; } }
 .NotoFont {
   font-family: 'Noto Serit', serif; }
 
@@ -8099,6 +8204,11 @@ hr.post-Portfolio {
 
 .nav-previous, .nav-next {
   color: #bf5f82; }
+  .nav-previous span, .nav-next span {
+    font-size: 70%; }
+
+.nav-next {
+  right: 0; }
 
 .nav-previous:hover {
   color: #bf5f82; }

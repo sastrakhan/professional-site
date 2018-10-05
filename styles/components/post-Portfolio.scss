@@ -1,0 +1,33 @@
+.post-Portfolio{
+    ul li{
+        font-family: 'Noto Serit', serif;
+        font-size: 115%;
+    }
+    p{
+        font-size: 115%;
+        font-family: 'Oxygen', sans-serif;
+        color: $primaryDarkGrey;
+    }
+} 
+
+
+@media only screen and (max-width : 550px) {
+    .post-Portfolio{
+        ul li{
+            font-size: 100%;
+        }
+        p{
+            font-size: 100%;
+        }
+    } 
+    .post-Portfolio-title{
+        font-size: 175%;
+    }
+}
+
+hr.post-Portfolio {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $primaryLightGrey, rgba(0, 0, 0, 0));
+    margin-bottom: 2%;
+}

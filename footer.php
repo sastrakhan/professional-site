@@ -7,7 +7,7 @@
 ?>
 
 <br />
-<footer class="">
+<footer class="mt-4">
     <summary class="container">
         <div class="row">   
             <div class="col-md-6 pb-2">

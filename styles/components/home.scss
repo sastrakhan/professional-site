@@ -113,8 +113,8 @@
 .wrapper > .circle {
     position: absolute;
     border: 3px solid $primaryMid;
-    width: 85%;
-    height: 50%;
+    width: 100px;
+    height: 100px;
     top: 50%;
     margin-top: -60%;
     _left: 50%;
@@ -191,8 +191,6 @@
     .wrapper > .circle {
         position: absolute;
         border: 3px solid $primaryMid;
-        width: 125%;
-        height: 50%;
         top: 50%;
         margin-top: -100%;
         margin-left: 0%;
@@ -200,7 +198,7 @@
     }
 
     #homeTopQuote{
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .btn-resume{

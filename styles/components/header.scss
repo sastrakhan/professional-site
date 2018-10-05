@@ -21,6 +21,11 @@ header.sm-header-height {
     height: $header-sm-height;
 }
 
+.small-header .nav-link{
+    color: $primaryLightGrey !important;
+    font-size: 115%;
+}
+
 .lg-header-margin{
     margin-top: $header-lg-height; 
 }
@@ -105,6 +110,9 @@ header,
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 768px) {
+    .small-header .nav-link{
+        font-size: 100%;
+    }
     .sean-logo{
         height: 55px;
     }
