@@ -22,7 +22,7 @@ $theme-colors: (
 
     // "primaryDark" :#323C5A,
     // "primaryMid" : #607d8b,
-     //"primaryLight": #8eacbb,
+    //  "primaryLight": #8eacbb,
 
 
     "primaryDark" :#2c2c54,
@@ -78,6 +78,7 @@ $primaryDarkGrey: #707070;
 @import "./components/button-on-home-page";
 @import "./components/home";
 @import "./components/footer";
+@import "./components/blog-card";
 
 body{
     font-family: 'Oxygen', sans-serif;
@@ -106,6 +107,14 @@ p {
 
 .boxShadow{
     @include boxShadow();
+}
+
+@media only screen and (max-width : 550px) {
+    .boxShadow{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3%;
+    }
 }
 
 
@@ -164,6 +173,21 @@ hr.post-Portfolio {
     margin-top : 20px;
     margin-bottom: 10%;
   }
+
+
+  $margins: 5 10 15 20;
+
+  @each $margin in $margins{
+        .smb-#{$margin}{
+            margin-bottom: percentage($margin/100);
+        };
+        .smt-#{$margin}{
+            margin-top: percentage($margin/100);
+        }
+  }
+
+
+
 
 
 // h1 h5 {

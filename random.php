@@ -8,7 +8,7 @@
 <hr class="post-Portfolio" />
 
 
-<form class="form-group">
+<form class="form-group text-white">
             <div>
                 <label> Your Email </label>
                  [email* your-email id:contactFormEmail class:form-control]
@@ -20,12 +20,12 @@
             <div>
                 <label> Your Message</label>
                     [textarea your-message class:form-control] 
-                    [submit id:contactSubmit class:btn class:btn-primaryDark "Send!"]
-                    <small id="emailHelp" class="form-text text-muted">Check out this link.</small>
+                    [submit id:contactSubmit class:btn class:btn-secondaryLight"Send"]  
             </div> 
             
         <div>
 </form>
+
 echo '<a href="' . $post_link . '#">';
                         echo '<div class="card view overlay mr-3" style="width: 18rem;">';
                         echo    '<img class="card-img-top" src="' . $post_IMG . '" alt="TODO Change to image name">';

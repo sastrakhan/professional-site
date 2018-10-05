@@ -11,6 +11,14 @@
  
     <div id="primary" class="content-area sm-header-margin">
         <main id="main" class="site-main" role="main">
+
+        <section class="smt-10 mb-4 text-center">
+                <h2 id="blogPageHeader" class="text-primaryDark">Thanks for checking out my blog!</h2>
+                <h6 class="text-primaryMidGrey">I got a Masters in English hence my writing is gooder than most.</h6>
+        </section>
+        <div class="offset-3 col-6">
+            <hr class="post-Portfolio mt-4 mb-4" />
+        </div>
         <?php
         //$params = $_GET['param_name'];
         //var_dump(params);

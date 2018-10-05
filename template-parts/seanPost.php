@@ -47,7 +47,7 @@
 
 		if ($post_tags) {
 			foreach($post_tags as $tag) {
-				$anchorBtns .= '<button type="button" class="seanBtnPadding btn btn-primaryMid">' .
+				$anchorBtns .= '<button type="button" class="seanBtnPadding btn btn-primaryMidGrey">' .
 										$tag -> name .
 								'</button>'; 
 				$anchorBtns .= ' ';

@@ -55,6 +55,7 @@ $cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
 }	
 
+
 @mixin btn__split($foregroundColor, $backgroundColor, $textColor) {
 	.btn-home-page {
 		color: $secondaryLight;
@@ -119,7 +120,14 @@ $cubic-bezier:cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			}
 		}
 	}
+	@media only screen and (max-width : 550px) {
+		.btn-home-page{
+			bottom: 35%;
+		}
+	}
 }
+
+
 
 *{
 	box-sizing:border-box;

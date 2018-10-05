@@ -3,7 +3,6 @@
 	//Only home page should start with header large
 	$(document).ready(function() {
 		var pathname = window.location.href; // Returns path only
-		console.log("headerscroll");
 
 		if(pathname.includes("skills")){
 			var pageHeight = $(document).height();
@@ -23,17 +22,26 @@
 	
 		}
 
+		if(pathname.includes("wpcf7")){
+			$("#openingQuote").append( "<h2 style='color: #F3C0E2;'>Thanks for your message!</h2>" );
+		}
 
 		//Button on landing page
 		$("#btn-home").click(function () {
 			//Needs twice in a row or doesn't work
+
 			$('html').animate({ scrollTop: '+=5px'}, 100);
 			$('html').animate({ scrollTop: '+=5px'}, 100);
+
+			//Safari doesn't listen to html so you need body
+			$('body').animate({ scrollTop: '+=5px'}, 100);
+			$('body').animate({ scrollTop: '+=5px'}, 100);
 		});
 
 		//Scroll contact form in footer Original code:  https://www.bootply.com/101026
 		$('#accordion').on('shown.bs.collapse', function () {
 			var panel = $(this).find('.in');	
+			
 			$('html, body').animate({
 				  scrollTop: panel.offset().top
 			}, 500);
@@ -42,7 +50,7 @@
 	});
 
 	$(window).on("load", function() {
-		$( "#loadingAside" ).hide( "slow");
+		$( "#loadingAside" ).hide();
 		$("header").show("slow");
 
 		//Fade in welcome button

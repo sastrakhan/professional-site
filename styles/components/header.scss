@@ -41,7 +41,7 @@ header {
     position: fixed;
     z-index: 10;
     width: 100%;
-    background: url("./images/sean-astrakhan-octopus.png");
+    background: url("./images/sean-astrakhan-octopus-lg.png");
 }
 
 .bgbg-primaryDark{
@@ -65,10 +65,6 @@ header {
 
 header,
 .lg-header
-// nav,
-// a,
-// img,
-// li 
 {
 	transition: .6s all;
 	-moz-transition: .6s all;
@@ -99,6 +95,34 @@ header,
     transition: visibility 0s, opacity .75s linear;    
 }
 
+.ml-25{
+    margin-left: 25%;
+}
+
+.mr-25{
+    margin-right: 25%;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 768px) {
+    .sean-logo{
+        height: 55px;
+    }
+    .ml-25{
+        margin-left: 0%;
+    }
+    
+    .mr-25{
+        margin-right: 0%;
+    }
+
+    #loadingContent{
+        position: absolute;
+        left: 10%;
+        margin-top: 50vh;
+    }
+}
+    
 //May not need items below if not using custom menu
 // .custom-menu-class ul {
 //     padding-left: 0;

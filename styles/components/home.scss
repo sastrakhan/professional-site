@@ -1,9 +1,10 @@
-#home-banner{
+.page-banner{
     font-style: italic;
     text-align: center;
     color: $primaryDarkGrey;
     font-family: 'Noto Serit';
     font-size: 150%;
+    text-transform: uppercase;
 }
 
 #home-quote{
@@ -11,6 +12,11 @@
     color: lightgray;
 }
 
+
+#project-list {
+    border-bottom: 1px solid $primaryDark;
+    width: 104%;
+}
      
 #project-list .nav-link.active {
     color: inherit;  
@@ -26,8 +32,13 @@
     border-top: 5px solid $primaryLightGrey;
 }
 
-#project-list {
-    border-bottom: 1px solid $primaryDark;
+.nav-item-l{
+    padding-left: 0px;
+    padding-right: 8px;
+}
+.nav-item-r{
+    padding-left: 8px;
+    padding-right: 0px;
 }
 
 .flex-260{
@@ -66,44 +77,9 @@
 .seanBtnPadding{
     padding: .5%;
     font-size: 90%;
+    color: white;
 }
 
-.bdcp-image{
-    background-image: url("./images/bdcp.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 160px;
-}
-
-.card-img-top{
-    height: 175px;
-    width: 175px;
-}
-
-.sean-blog-card-title{
-    text-align: center;
-    font-weight: 900;
-  }
-  
-  .workPostImg{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
-    position: absolute;
-    margin-top: 10px;
-  }
-
-  .blog-card {
-    border-radius: 2px;
-    min-height: 240px;
-    display: inline-block;
-    margin: 1rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 6px 9px rgba(0,0,0,0.23);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
-  
-  .blog-card:hover {
-    box-shadow: 0 6px 6px $secondaryLight, 0 6px 9px $secondaryLight;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  }
 
 .volunteerCardText{
     position: absolute; 
@@ -111,10 +87,16 @@
     margin-left: 15px;
     color: #fff;
 }
+.bdcp-image{
+    background-image: url("./images/bdcp2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
+}
 
 .code4bmore-image{
     @extend .bdcp-image;
-    background-image: url("./images/sean-astrakhan-codebmore.png");
+    background-image: url("./images/codebmore.png");
 }
 .darken-overlay {
     width: 100%;
@@ -138,6 +120,92 @@
     _left: 50%;
     margin-left: 40%;
     border-radius: 100%;
+}
+
+.skillsTab{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#myTabContent{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 3%;
+    width: 104%;
+}
+@media only screen and (max-width : 550px) {
+    .nav-link{
+        padding: 0%;
+    }
+}
+
+@media only screen and (max-width : 775px) {
+    #myTabContent{
+        margin-left: -5%;
+        margin-right: 0%;
+        padding: 0%;
+        width: 110%;
+        padding-left: 6%;
+        padding-right: 3%;
+    }
+    .nav-link{
+        padding-bottom: 0%;
+    }
+
+    .card-img-top{
+        height: 125px;
+        width: 125px;
+    }
+    .blog-card-row{
+      margin-right: 2rem;
+      margin-bottom: -.75rem;
+    }
+    .blog-card {
+        min-height: 140px;
+    }
+    .skillsList{
+        padding: 0%;
+        padding-left: 2%;
+        h2{
+    
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            float: left; 
+            list-style-type: none;
+        }
+        li:after {
+            content: ", ";
+        }
+        li:last-child:after {
+            content: "";
+        }
+        li:not(:first-child){
+            padding-left: 5%;
+        }
+    }
+    .wrapper > .circle {
+        position: absolute;
+        border: 3px solid $primaryMid;
+        width: 125%;
+        height: 50%;
+        top: 50%;
+        margin-top: -100%;
+        margin-left: 0%;
+        border-radius: 100%;
+    }
+
+    #homeTopQuote{
+        margin-top: 10%;
+    }
+
+    .btn-resume{
+        margin-bottom: 5%;
+    }
 }
 
 

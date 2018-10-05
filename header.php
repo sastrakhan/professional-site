@@ -17,7 +17,7 @@
 <div id="loadingAside" class="row">
    <div class="col-sm-12 my-auto">
      <div id="loadingContent">
-      <h1 class="text-center text-white">Hi, I'm Sean</h1>
+      <h1 class="text-center text-white">Hi,</h1>
       <h4 class="btn-loading-home-page">One sec...</h4>
     </div>
    </div>
@@ -27,7 +27,7 @@
 <header class="small-header lg-header">
     <nav class="navbar navbar-expand navbar-dark bgbg-primaryDark">
         <div class="container">
-            <div style="margin-left: 25%">
+            <div class="ml-25">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.php/#skills">Projects &amp; Skills</a>
@@ -40,7 +40,7 @@
                 </a>
             </picture>
 
-            <div style="margin-right: 25%">
+            <div class="mr-25">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.php/my-blogs/">Blog</a>
@@ -58,7 +58,7 @@
             <div id="large-header">
                 <summary>
                     <div class="container col-md-6 pull-left offset-md-2 text-white pt-5">
-                        <aside class="mb-5">
+                        <aside id="openingQuote" class="mb-5">
                             <h1>Hi, I'm Sean,</h1>
                             <h4 class="NotoFont">I like to code, listen, and give unsolicted advice.</h4>
                             <h4 class="NotoFont">I'm having a hard time thinking of what else to put here.</h4>
