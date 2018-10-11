@@ -23,19 +23,18 @@
    </div>
 </div>
 
-
 <header class="small-header lg-header">
     <nav class="navbar navbar-expand navbar-dark bgbg-primaryDark">
         <div class="container">
             <div class="ml-25">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php/#skills">Projects &amp; Skills</a>
+                        <a class="nav-link" href="index.php/<?php if(isset($_SESSION['isSuperUser'])){echo '?superuser';} ?>#skills">Projects &amp; Skills</a>
                     </li>
                 </ul>         
             </div>
             <picture>
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="index.php/<?php if(isset($_SESSION['isSuperUser'])){echo '/?superuser';} ?>">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small-oct.png" class="sean-logo rounded-circle img-fluid">
                 </a>
             </picture>
@@ -43,10 +42,10 @@
             <div class="mr-25">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php/my-blogs/">Blog</a>
+                        <a class="nav-link" href="index.php/my-blogs/<?php if(isset($_SESSION['isSuperUser'])){echo '?superuser';} ?>">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php/about/">About</a>
+                        <a class="nav-link" href="index.php/about<?php if(isset($_SESSION['isSuperUser'])){echo 'me/?superuser';} ?>">About</a>
                     </li>
                 </ul>
             </div>
@@ -57,12 +56,16 @@
         <div class="content">
             <div id="large-header">
                 <summary>
-                    <div class="container col-md-6 pull-left offset-md-2 text-white pt-5">
+                    <div class="container col-md-6 pull-left offset-md-2 text-white pt-5 center-text-mobile">
                         <aside id="openingQuote" class="mb-5">
-                            <h1>Hi, I'm Sean,</h1>
-                            <h4 class="NotoFont">I like to code, listen, and give unsolicted advice.</h4>
-                            <h4 class="NotoFont">Some call me affable, coachable and optimistic.  I'm having a hard time thinking of what else to put here.</h4>
+                            <h1 class="" style="font-size: 3.5em">Hi, I'm Sean.</h1>
+                                <blockquote>
+                                    <br />
+                                    <h3 class="NotoFont textShadow"><i>Full-Stack Developer</i></h3>
+                                    <h3> Learning <i class="small fa fa-chevron-right text-secondaryDark"></i> Comfort </h3>
+                                </blockquote>
                         </aside>
+
                         <article>
                             <!-- <p>
                                 Learn more about <a class="text-secondaryDark" href="index.php/about/">who I am </a>

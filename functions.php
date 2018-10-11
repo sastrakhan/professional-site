@@ -32,13 +32,40 @@
         }
     }
 
+    function start_session() {
+        if(!session_id()) {
+            session_start();
+            global $wp;
+            $url_entry = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            $isSuperUser = strpos($url_entry, 'superuser') !== false;
+        
+            //Check is superUser is in URL and if its been updated already
+            if(!isset($_SESSION['isSuperUser']) && $isSuperUser){
+                $_SESSION["isSUset"] = !isset($_SESSION['superUser']);
+        
+                if ($isSuperUser) {
+                    $_SESSION["isSuperUser"] = true;
+                }
+
+                $_SESSION['url_entry'] = $url_entry;
+                $_SESSION['last_action'] = time();
+        
+                //If you ever want to expire it
+                if ($_SESSION['last_action'] < time() - 30/* be a little tolerant here */) {
+                    //session_destroy();
+                }
+            }	
+        }
+    }
+
     function enqueue_sean_scripts_js(){
         wp_enqueue_script( 'sean-scripts', get_template_directory_uri() . '/js/sean-scripts.js', array('jquery'), null, false );
     }
     //Executes all scripts above
     add_action( 'wp_enqueue_scripts', 'enqueue_child_theme_styles', PHP_INT_MAX);
     add_action( 'wp_enqueue_scripts', 'enqueue_header_scroll_js');
-    add_action('wp_enqueue_scripts', 'enqueue_sean_scripts_js'); //May delete if hamburger isn't used or repurpose for basic js files
+    add_action('wp_enqueue_scripts', 'enqueue_sean_scripts_js');
+    add_action('init', 'start_session', 1);
 
 
     function wpb_custom_new_menu() {

@@ -5,7 +5,6 @@
  * The template for displaying all single posts and attachments
  * @package WordPress
  */
- 
     get_header(); 
 ?>
  
@@ -16,6 +15,7 @@
                 <h2 id="blogPageHeader" class="text-primaryDark">Thanks for checking out my blog!</h2>
                 <h6 class="text-primaryMidGrey">I got a Masters in English hence my writing is gooder than most.</h6>
         </section>
+  
         <div class="offset-3 col-6">
             <hr class="post-Portfolio mt-4 mb-4" />
         </div>
@@ -35,7 +35,7 @@
             echo '<div class="row">';
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post();
-                        $post_full_description = get_the_content();
+                        $post_full_description = get_the_excerpt();
                         $post_link = get_the_permalink();
                         $post_IMG = get_the_post_thumbnail_url();
                         $post_date = get_the_date();

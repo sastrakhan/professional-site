@@ -67,6 +67,10 @@ header {
     margin-top: 50vh;
 }
 
+.textShadow{
+    color: $primaryLight;
+}
+
 
 header,
 .lg-header
@@ -108,11 +112,22 @@ header,
     margin-right: 25%;
 }
 
+@media only screen and (max-width : 550px) {
+    .textShadow{
+        color: $secondaryDark;
+    }
+    .center-text-mobile{
+        text-align: center;
+        background: $primaryDark;
+    }
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 768px) {
     .small-header .nav-link{
         font-size: 100%;
     }
+
     .sean-logo{
         height: 55px;
     }

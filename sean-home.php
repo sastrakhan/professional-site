@@ -1,5 +1,7 @@
 <?php /* Template Name: sean-home */ ?>
-<?php get_header(); ?>
+<?php get_header(); 
+        
+?>
  
 <main class="container content-area ">
     <div id="primary" class="row-m-t"> 
@@ -9,19 +11,46 @@
                 <h1 id="home-banner">Skills &amp; Projects</h1>
             </section> -->
             <blockquote  id="homeTopQuote" class="blockquote offset-md-3 col-md-6">
-                        <h3 class="NotoFont text-primaryDark text-center">
-                            <small><i class="small fa fa-quote-left"></i></small>
-                                A full-stack developer who values <large class="text-secondaryDark">learning</large> 
-                                and <large class="text-secondaryDark">collaboration</large> over comfort and predictability.
-                            <small><i class="small fa fa-quote-right"></i></small> 
-                            <br class="d-sm-block d-md-none" />
-                            <span id="home-quote">-I said about myself</span>
-                        </h3>
-                        <hr class="post-Portfolio mt-4 mb-4" />
+                    <?php 
+                        $bannerQuote = '';
+                        if(isset($_SESSION['isSuperUser'])){
+                            ob_start(); ?>
 
-            </blockquote>          
+                            <h3 class="NotoFont text-primaryDark text-center">
+                                <small><i class="small fa fa-quote-left"></i></small>
+                                    Full-stack developer ready for new opportunities &amp; languages,
+                                    eager to <large class="text-secondaryDark">learn from your team</large> and
+                                    be part of <large class="text-secondaryDark">something bigger</large>.
+                                <small><i class="small fa fa-quote-right"></i></small> 
+                                <br class="d-sm-block d-md-none" />
+                            </h3>
+                            <p id="home-quote" class="text-center">-I said about myself</p>
+                            <?php 
+                            $bannerQuote = ob_get_clean();
+
+                        } else{
+                            ob_start(); ?>
+
+                            <h3 class="NotoFont text-primaryDark text-center">
+                                <small><i class="small fa fa-quote-left"></i></small>
+                                    A full-stack developer who values <large class="text-secondaryDark">learning</large> 
+                                    and <large class="text-secondaryDark">collaboration</large> over comfort and predictability.
+                                <small><i class="small fa fa-quote-right"></i></small> 
+                                <br class="d-sm-block d-md-none" />
+                                <span id="home-quote">-I said about myself</span>
+                            </h3>
+
+                            <?php 
+                            $bannerQuote = ob_get_clean();
+                        }
+
+                        echo $bannerQuote;
+                    ?>
+                        
+                    <hr class="post-Portfolio mt-4 mb-4" />
+            </blockquote>  
+
         </article>
-
         <section class="">
                 <h1 class="text-uppercase page-banner" id="home-banner">Skills &amp; Projects</h1>
         </section>

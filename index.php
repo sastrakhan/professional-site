@@ -3,7 +3,7 @@
     if ( have_posts() ) { 
         while ( have_posts() ) : the_post();
     ?>
-        <div class="content-area container sm-header-margin" id="wordpress-content-area">
+        <div class="content-area container sm-header-margin clearfix" id="wordpress-content-area">
             <?php the_content(); ?>
         </div><!-- Stuff above shows page stuff-->
     <?php
@@ -17,3 +17,4 @@
     get_footer(); 
     wp_footer();
 ?>
+

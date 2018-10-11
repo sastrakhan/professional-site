@@ -18,8 +18,7 @@
 	
 			//Show header content like "hi am" text
 			$("#large-header").addClass("d-block");
-			$(".navbar").addClass("navHide");
-	
+			$(".navbar").addClass("navHide");	
 		}
 
 		if(pathname.includes("wpcf7")){

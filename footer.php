@@ -19,6 +19,11 @@
                 <!-- <button type="button" class="btn-resume-footer float-right">
                     <h5><i class="fa fa-download" aria-hidden="true"></i> Resume</h5>
                 </button> -->
+                <a target="_blank" href="http://sean-professional.azurewebsites.net/wp-content/uploads/2018/09/Sean-Astrakhan-Resume.pdf">  
+                    <button type="button" class="btn-resume float-md-right col-md-4 col-4 offset-3">
+                        <i class="fa fa-download" aria-hidden="true"></i> Resume 
+                    </button>
+                </a>
             </div> 
             <div class="col-md-6 d-none d-sm-none d-md-block">
                 <div class="panel-group" id="accordion">

@@ -8,7 +8,7 @@
     get_header(); 
 ?>
  
-    <div id="primary" class="content-area sm-header-margin container">
+    <div id="primary" class="content-area sm-header-margin container clearfix">
         <main id="main" class="site-main" role="main">
         <?php
 

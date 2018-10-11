@@ -7632,6 +7632,9 @@ header {
   left: 40%;
   margin-top: 50vh; }
 
+.textShadow {
+  color: #706fd3; }
+
 header,
 .lg-header {
   transition: .6s all;
@@ -7663,6 +7666,13 @@ header,
 .mr-25 {
   margin-right: 25%; }
 
+@media only screen and (max-width: 550px) {
+  .textShadow {
+    color: #bf5f82; }
+
+  .center-text-mobile {
+    text-align: center;
+    background: #2c2c54; } }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 768px) {
   .small-header .nav-link {
@@ -8080,9 +8090,12 @@ hr.post-Portfolio {
 /* general styles 
 https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
 */
-.my-journey {
+#my-journey {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 2; }
 
 /* padded section */
 .pad-section {
@@ -8105,7 +8118,7 @@ https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effec
 
 /* additional sections */
 #my-journey #home {
-  background: url("./images/journey/bmore.jpg") no-repeat center center fixed;
+  background: url("images/journey/bmore.jpg") no-repeat center center fixed;
   display: table;
   height: 90vh;
   position: relative;
@@ -8127,6 +8140,14 @@ https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effec
   -o-background-size: cover;
   background-size: cover;
   color: whitesmoke; }
+
+#leapText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  margin-top: 20%; }
 
 #services {
   background-color: #306d9f;
@@ -8175,6 +8196,11 @@ p {
   font-family: 'Noto Serit', serif;
   line-height: 23px;
   margin: 0 0 23px 0; }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
 
 .boxShadow {
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
