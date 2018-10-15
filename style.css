@@ -7632,7 +7632,7 @@ header {
   left: 40%;
   margin-top: 50vh; }
 
-.textShadow {
+.colorMobileChange {
   color: #706fd3; }
 
 header,
@@ -7667,14 +7667,17 @@ header,
   margin-right: 25%; }
 
 @media only screen and (max-width: 550px) {
-  .textShadow {
+  .colorMobileChange {
     color: #bf5f82; }
 
   .center-text-mobile {
     text-align: center;
-    background: #2c2c54; } }
+    background: url("./images/purplebg.png"); } }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 768px) {
+  header {
+    background: url("./images/sean-astrakhan-octopus-small.png"); }
+
   .small-header .nav-link {
     font-size: 100%; }
 
@@ -7929,7 +7932,7 @@ a.div {
 
 .btn-resume.btn a, .btn.btn-resume-footer a {
   color: #ffc1e3;
-  font-size: 110%; }
+  font-size: 120%; }
   .btn-resume.btn a:hover, .btn.btn-resume-footer a:hover {
     color: #fff; }
 
@@ -7940,6 +7943,14 @@ a.div {
 .btn-resume-footer {
   color: inherit;
   border: none; }
+
+footer .btn-resume, footer .btn-resume-footer {
+  border: none;
+  color: #cfcfcf;
+  position: absolute;
+  margin-top: .5%;
+  margin-left: 5%;
+  font-size: 125%; }
 
 .seanBtnPadding {
   padding: .5%;

@@ -67,7 +67,7 @@ header {
     margin-top: 50vh;
 }
 
-.textShadow{
+.colorMobileChange{
     color: $primaryLight;
 }
 
@@ -113,17 +113,20 @@ header,
 }
 
 @media only screen and (max-width : 550px) {
-    .textShadow{
+    .colorMobileChange{
         color: $secondaryDark;
     }
     .center-text-mobile{
         text-align: center;
-        background: $primaryDark;
+        background: url("./images/purplebg.png");
     }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 768px) {
+    header{
+        background: url("./images/sean-astrakhan-octopus-small.png");
+    }
     .small-header .nav-link{
         font-size: 100%;
     }

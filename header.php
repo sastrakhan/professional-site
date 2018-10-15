@@ -61,7 +61,7 @@
                             <h1 class="" style="font-size: 3.5em">Hi, I'm Sean.</h1>
                                 <blockquote>
                                     <br />
-                                    <h3 class="NotoFont textShadow"><i>Full-Stack Developer</i></h3>
+                                    <h3 class="NotoFont colorMobileChange"><i>Full-Stack Developer</i></h3>
                                     <h3> Learning <i class="small fa fa-chevron-right text-secondaryDark"></i> Comfort </h3>
                                 </blockquote>
                         </aside>

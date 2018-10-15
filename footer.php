@@ -16,14 +16,15 @@
                 <h5 class="font-weight-light text-secondaryDark mt-2"> <a href="mailto:sastrakhan@gmail.com">sastrakhan@gmail.com</a></h5>
                 <a href="https://www.github.com/sastrakhan?tab=stars" target="_blank"><span class="fa fa-2x fa-github text-primaryLightGrey"></span></a>
                 <a href="https://www.linkedin.com/in/sean-astrakhan-4261b272" target="_blank"><span class="fa fa-2x fa-linkedin text-primaryLightGrey"></span></a>
-                <!-- <button type="button" class="btn-resume-footer float-right">
-                    <h5><i class="fa fa-download" aria-hidden="true"></i> Resume</h5>
-                </button> -->
                 <a target="_blank" href="http://sean-professional.azurewebsites.net/wp-content/uploads/2018/09/Sean-Astrakhan-Resume.pdf">  
-                    <button type="button" class="btn-resume float-md-right col-md-4 col-4 offset-3">
+                    <button type="button" class="btn-resume">
                         <i class="fa fa-download" aria-hidden="true"></i> Resume 
                     </button>
                 </a>
+                <!-- <button type="button" class="btn-resume-footer float-right">
+                    <h5><i class="fa fa-download" aria-hidden="true"></i> Resume</h5>
+                </button> -->
+                
             </div> 
             <div class="col-md-6 d-none d-sm-none d-md-block">
                 <div class="panel-group" id="accordion">

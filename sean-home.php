@@ -18,8 +18,8 @@
 
                             <h3 class="NotoFont text-primaryDark text-center">
                                 <small><i class="small fa fa-quote-left"></i></small>
-                                    Full-stack developer ready for new opportunities &amp; languages,
-                                    eager to <large class="text-secondaryDark">learn from your team</large> and
+                                    Full-stack developer ready for new opportunities &amp; languages.  
+                                    Eager to <large class="text-secondaryDark">learn from your team</large> and
                                     be part of <large class="text-secondaryDark">something bigger</large>.
                                 <small><i class="small fa fa-quote-right"></i></small> 
                                 <br class="d-sm-block d-md-none" />
@@ -61,7 +61,7 @@
                 
                 <a target="_blank" href="http://sean-professional.azurewebsites.net/wp-content/uploads/2018/09/Sean-Astrakhan-Resume.pdf">  
                     <button type="button" class="btn btn-resume float-md-right col-md-2 col-4 offset-4">
-                        <i class="fa fa-download" aria-hidden="true"></i> Resume 
+                        <i class="fa fa-download text-secondaryLight" aria-hidden="true"></i> Resume 
                     </button>
                 </a>
         </aside>

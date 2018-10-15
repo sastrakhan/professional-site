@@ -57,7 +57,7 @@
 
 .btn-resume.btn a {
     color: $secondaryLight;
-    font-size: 110%;
+    font-size: 120%;
     &:hover {
         color:#fff;
     }
@@ -72,6 +72,15 @@
     @extend .btn-resume;
     color: inherit;
     border: none;
+}
+
+footer .btn-resume{
+    border: none;
+    color: $primaryLightGrey;
+    position: absolute;
+    margin-top: .5%;
+    margin-left: 5%;
+    font-size: 125%;
 }
 
 .seanBtnPadding{
