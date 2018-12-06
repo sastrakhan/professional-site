@@ -3,9 +3,9 @@
     function sean_the_post_navigation( $args = array() ) {
         $args = wp_parse_args( $args, array(
             'prev_text'          => '<h4><i class="fa fa-lg fa-arrow-circle-left"></i> Previous:
-                                        <span class="text-primaryDarkGrey"><i>%title.</i>
+                                        <span class="text-primaryDark"><i>%title.</i>
                                     </span></h4>',
-            'next_text'          => '<h4><span class="text-primaryDarkGrey">
+            'next_text'          => '<h4><span class="text-primaryDark">
                                         <i>%title.</i>
                                     </span> Next: <i class="fa fa-lg fa-arrow-circle-right secondaryLight"></i></h4>',
             'in_same_term'       => true,
@@ -33,8 +33,8 @@
         );
 
         // Only add markup if there's somewhere to navigate to.
-        if ( $previous || $next ) {
-            $navigation = _navigation_markup( $previous . $next, 'post-navigation-heading', $screen_reader_text = 'NAVIGATION' );
+        if ( $previous || $next ) {  //post-navigation-heading 
+            $navigation = _navigation_markup( $previous . $next, 'container', $screen_reader_text = 'Navigation' );
         }
 
         return $navigation;

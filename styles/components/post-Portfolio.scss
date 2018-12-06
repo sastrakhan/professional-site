@@ -1,21 +1,20 @@
 .post-Portfolio{
     ul li{
-        font-family: 'Noto Serit', serif;
-        font-size: 115%;
+        font-family: 'Oxygen', sans-serif;
     }
     p{
         font-size: 115%;
         font-family: 'Oxygen', sans-serif;
-        color: $primaryDarkGrey;
     }
 } 
+
+.post-Portfolio-title{
+    color: $primaryMid;
+}
 
 
 @media only screen and (max-width : 550px) {
     .post-Portfolio{
-        ul li{
-            font-size: 100%;
-        }
         p{
             font-size: 100%;
         }

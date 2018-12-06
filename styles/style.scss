@@ -95,17 +95,25 @@ a {
 a:hover{
     text-decoration: none !important;
     color: $secondaryDark;
-  }
+}
 
 main {
     _margin-top: $header-lg-height - $header-sm-height;
 }
 
+section p{
+    font-family: 'Oxygen', sans-serif;
+}
+
 p {
     font-family: 'Noto Serit', serif;
-    //font-size: 14px;
     line-height: 23px;
     margin: 0 0 23px 0;
+}
+
+.lead{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 120%;
 }
 
 // Usage as a mixin
@@ -143,10 +151,11 @@ p {
     color: $white;
 }
 
-.post-navigation-heading h2{
+//Navigation at bottom of page
+.screen-reader-text{
     margin-top: 5%;
-    font-size: 100%;
-    color: $primaryDark;
+    font-size: 115%;
+    color: $primaryDarkGrey;
 }
 
 .nav-previous, .nav-next {

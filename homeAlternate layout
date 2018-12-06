@@ -55,7 +55,7 @@
                 <h1 class="text-uppercase page-banner" id="home-banner">Skills &amp; Projects</h1>
         </section>
         <aside class="clearfix row justify-content-center">     
-                <a target="_blank" href="http://sean-professional.azurewebsites.net/wp-content/uploads/Sean-Astrakhan-Resume.pdf">  
+                <a target="_blank" href="http://sean-professional.azurewebsites.net/wp-content/uploads/2018/10/Sean-Astrakhan-Resume.pdf">  
                     <button type="button" class="btn btn-resume home mt-2 mb-4">
                         <i class="fa fa-download text-secondaryLight" aria-hidden="true"></i> Resume 
                     </button>
@@ -128,11 +128,11 @@
     </div>
 
     <div class="row">
-        <section class="col bg-primaryMid rounded-top container">
+        <section class=" bg-primaryMid rounded-top container row">
             <h3 class="text-white mt-4">In the Community...</h3>
-            <p class="text-white mb-4">"Volunteering takes commitment.  Before you decide, remember, you probably have nothing better to do.” <i>– My friend Cynthia</i></p>
+            <p class="text-white"><i>“It’s easy to make a buck.  It’s a lot tougher to make a difference. ”</i> – Tom Brokaw</p>
             <!-- Card Narrower -->
-            <div class="card card-cascade narrower mb-3">
+            <div class="card mb-3 col-lg-6">
                 <!-- Card image -->
                 <a href="http://www.baltimoredcp.org/" target="_blank">
                     <div class="view view-cascade overlay bdcp-image darken-overlay" >
@@ -153,7 +153,7 @@
                 </a>  -->
             </div>
             <!-- Card Narrower -->
-            <div class="card card-cascade narrower mb-3">
+            <div class="card mb-3 col-lg-6">
                 <!-- Card image -->
                 <a href="http://www.codeforbaltimore.org/team/" target="_blank">
                     <div class="view view-cascade overlay code4bmore-image darken-overlay">
@@ -172,7 +172,8 @@
                 </a>
             <!-- Card Narrower -->
         </section>
-        <section class="col flex-260">
+        <!-- <section class="flex-260"> -->
+        <section class="">
             <section class="mt-3 mb-5">
                     <h1 class="text-uppercase page-banner" id="home-banner">Recent Blog Posts</h1>
                     <hr class="post-Portfolio" />
@@ -193,7 +194,8 @@
         foreach($blogPosts as $blogPost){
             $description_trimmed = mb_strimwidth($blogPost -> min_description, 0, 150, '...<br />');
 
-            echo    '<div class="row mb-3">';
+            echo    '<section class="row">';
+            echo    '<div class="col-md-6 col-lg-4 mb-3">';
             echo       '<div class="col-2 wrapper">';
             echo          '<img class="rounded-circle img-responsive circle" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
             echo       '</div>';
@@ -205,6 +207,7 @@
             echo        '</a>';
             echo       '</div>';
             echo    '</div>';
+            echo    '</section>';
         }
     }
 
@@ -225,7 +228,7 @@
 
         $blogPosts = getPosts($category, 10);
 
-        echo '<div class="row row-IE">';
+        echo '<div class="row">';
         foreach($blogPosts as $blogPost){
             $post_URL = '<a href="' . $blogPost -> link . '#">Read more</a>';
             $post_min_desc_parsed = explode("Features", $blogPost -> min_description, 2);
@@ -235,8 +238,8 @@
 
             echo     '<a class="col-md-6 blog-card-row" href="' . $blogPost -> link . '#">';
             echo        '<section class="container bg-white p-0 blog-card">';
-            echo            '<div class="row row-IE">';
-            echo                '<div class="col-md-4 col-3 p-0 IE-display-none">';
+            echo            '<div class="row">';
+            echo                '<div class="col-md-4 col-3 p-0">';
             echo                    '<img class="card-img-top col rounded workPostImg p-0" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
             echo                '</div>';
             echo                '<div class="col-md-8 col-9 pt-3">';

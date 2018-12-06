@@ -29,11 +29,23 @@ https://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effec
 }
 /* additional sections */
 #my-journey #home {
- @include parallax("images/journey/bmore.jpg");
+ @include parallax("images/journey/bmore.png");
 }
 
 #my-journey #china {
   @include parallax("./images/journey/chinawall.jpg");
+ }
+
+ #my-journey #leap1 {
+  @include parallax("./images/journey/jump2.png");
+ }
+
+ #my-journey #leap2 {
+  @include parallax("./images/journey/jump3.png");
+ }
+
+ #my-journey #chaos {
+  @include parallax("./images/journey/chaos.jpg");
  }
 
  #leapText{

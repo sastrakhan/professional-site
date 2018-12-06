@@ -47,7 +47,7 @@
                 $post_mobile_description = mb_strimwidth($post_min_description, 0, 150, "...");
                 $tags_formatted = buildTagBtns($blogPost -> tags);
     
-                                echo '<div class="col-md-5 border rounded blog-card">';
+                                echo '<div class="col-md-5 border rounded blog-pg-card">';
                                 echo '<a href="' . $blogPost -> link . '#">';
                                         echo '<div class="row">';
                                         echo    '<div class="center p-3">';
