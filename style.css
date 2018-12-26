@@ -7678,6 +7678,9 @@ header,
   header {
     background: url("./images/sean-astrakhan-octopus-small.png"); }
 
+  .lg-header {
+    background-attachment: scroll; }
+
   .small-header .nav-link {
     font-size: 100%; }
 

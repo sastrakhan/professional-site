@@ -180,7 +180,28 @@ if ( $the_query->have_posts() ) {
 }
 echo '</div>';s
 
-
+<section class="row mt-3 mb-5">
+    <div class="col-md-6">
+        <img class="wp-image-452 offset-5" src="http://sean-professional.azurewebsites.net/wp-content/uploads/2018/10/brick-wall-1.png" alt="" width="96" height="96" />
+        <h4 class="text-secondaryDark text-center">HARD</span></h4>
+        <ul class="">
+            <li><span style="font-weight: 400;">Developing custom applications in a variety of languages and frameworks</span></li>
+            <li><span style="font-weight: 400;">Updating legacy systems and/or implementing fixes</span></li>
+            <li><span style="font-weight: 400;">Integrating disparate data sources to provide a 360 view of content</span></li>
+            <li><span style="font-weight: 400;">Creating ETL pipelines for ongoing data transfer </span></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <img class="wp-image-452 offset-5" src="http://sean-professional.azurewebsites.net/wp-content/uploads/2018/10/feather-filled-shape.png"a alt="" width="96" height="96" />
+        <h4 class="text-center" style="color:#706FD4">SOFT</span></h4>
+        <ul class="">
+            <li><span style="font-weight: 400;">Predicting obstacles and planning accordingly</span></li>
+            <li><span style="font-weight: 400;">Tactfully disagreeing and constructively suggesting an alternative</span></li>
+            <li><span style="font-weight: 400;">“Stepping back” and reassessing the bigger picture from a user vs developer perspective</span></li>
+            <li><span style="font-weight: 400;">Assessing when to ask for help and when to keep researching</span></li>
+        </ul>
+    </div>
+</section>
 
 <div class="row">
    <div class="col-md-8">
