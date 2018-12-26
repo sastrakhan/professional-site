@@ -236,8 +236,8 @@
             echo     '<a class="col-md-6 blog-card-row" href="' . $blogPost -> link . '#">';
             echo        '<section class="container bg-white p-0 blog-card">';
             echo            '<div class="row row-IE">';
-            echo                '<div class="col-md-4 col-3 p-0 IE-display-none">';
-            echo                    '<img class="card-img-top col rounded workPostImg p-0" src="' . $blogPost -> imgURL . '" alt="TODO Change to image name">';
+            echo                '<div class="col-md-4 col-3 p-0 IE-display-none">'; //Alt text less descriptive than Title.  Alt is pic info and title is how it relates
+            echo                    '<img class="card-img-top col rounded workPostImg p-0" src="' . $blogPost -> imgURL . '" alt="' . $blogPost -> imgAltText . '" title="' . $blogPost -> title . '">';
             echo                '</div>';
             echo                '<div class="col-md-8 col-9 pt-3">';
             echo                    '<h3 class="card-title-shrink">' . $blogPost -> title . '</h3>';

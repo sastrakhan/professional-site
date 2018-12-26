@@ -23,6 +23,8 @@
 					'full_description' => get_the_content(),
 					'link' => get_the_permalink(),
 					'imgURL' => get_the_post_thumbnail_url(),
+					'imgAltText' => get_post_meta(get_post_thumbnail_id(),'_wp_attachment_image_alt', true),
+					'mobileimgURL' => createMobileImgURL(get_the_post_thumbnail_url()),
 					'title' => get_the_title(),
 					'dateCreated' => get_the_date(), 
 					'tags' => get_the_tags(),
@@ -40,6 +42,13 @@
 		}
 
         return $allPosts;
+	}
+
+	function createMobileImgURL($bigImgURL){
+		$smallImgUrl = substr($bigImgURL, 0, -4) . '_mobile.png';
+		//var_dump($smallImgUrl);  
+
+		return $smallImgUrl;
 	}
 	
 	function buildTagBtns($post_tags){

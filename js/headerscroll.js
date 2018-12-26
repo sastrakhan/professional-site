@@ -1,13 +1,19 @@
 (function($) {
-	var hasScrolled = false;
+	var hasScrolled = false; //Used below to scroll user to blockquote so they dont miss it
 	//Only home page should start with header large
 	$(document).ready(function() {
 		var pathname = window.location.href; // Returns path only
+		var isScrolled = $(document).scrollTop() > 0;
 
 		if(pathname.includes("skills")){
 			var pageHeight = $(document).height();
 			$('html, body').animate({ scrollTop: 10 }, 50);
 			$( "#loadingAside" ).hide( "slow");
+			hasScrolled = true;
+		}
+		else if (isScrolled){ //If they start half-way down page remove banner
+			$( "#loadingAside" ).hide( "slow");
+			hasScrolled = true;
 		}
 		else{
 			$( "#loadingAside" ).show();
@@ -47,6 +53,7 @@
 	});
 
 	$(window).on("load", function() {
+		$('html, body').animate({ scrollTop: 0 });
 		$( "#loadingAside" ).hide();
 		$("header").show("slow");
 
@@ -67,7 +74,8 @@
 			$(".navbar").addClass( "navShow");
 			$(".navbar").removeClass( "navHide");	
 		
-			$('html, body').animate({ scrollTop: 0 }, 500);
+			//Ensure user sees blockquote and doens't scroll past it
+			$('html, body').animate({ scrollTop: 0 });
 
 			hasScrolled = true;
 		}

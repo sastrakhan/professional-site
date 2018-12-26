@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php if (function_exists('is_tag') && is_tag()) { echo 'Tag Archive for &quot;'.$tag.'&quot; '; } elseif (is_archive()) { wp_title(''); echo ' Archive - '; } elseif (is_search()) { echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; } elseif (!(is_404()) && (is_single()) || (is_page())) { wp_title(''); echo ' - '; } elseif (is_404()) { echo 'Not Found - '; } bloginfo('name'); ?></title>
 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <?php wp_head(); ?>
 </head>
 
@@ -67,13 +60,6 @@
                                     <h3> Learning <i class="small fa fa-chevron-right text-secondaryDark"></i> Comfort </h3>
                                 </blockquote>
                         </aside>
-
-                        <article>
-                            <!-- <p>
-                                Learn more about <a class="text-secondaryDark" href="/about/">who I am </a>
-                                or my <a class="text-secondaryDark" href="#">professional background</a>.  
-                            </p> MAKE THIS A MENU-->
-                        </article>
                     </div>
                     <summary id="btn-home-container" class="btn-home-hide">
                         <h4 id="btn-home" class="btn-home-page">Enter</h4>
