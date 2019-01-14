@@ -24,12 +24,12 @@
             <div class="ml-25">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/<?php if(isset($_SESSION['isSuperUser'])){echo '?superuser';} ?>#skills">Projects &amp; Skills</a>
+                        <a class="nav-link" href="/#skills">Projects &amp; Skills</a>
                     </li>
                 </ul>         
             </div>
             <picture>
-                <a class="nav-link" href="/<?php if(isset($_SESSION['isSuperUser'])){echo '/?superuser';} ?>">
+                <a class="nav-link" href="/">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small-oct.png" class="sean-logo rounded-circle img-fluid">
                 </a>
             </picture>
@@ -37,10 +37,10 @@
             <div class="mr-25">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/my-blogs/<?php if(isset($_SESSION['isSuperUser'])){echo '?superuser';} ?>">Blog</a>
+                        <a class="nav-link" href="/my-blogs/">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about<?php if(isset($_SESSION['isSuperUser'])){echo 'me/?superuser';} ?>">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                 </ul>
             </div>

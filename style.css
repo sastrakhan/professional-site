@@ -8006,7 +8006,7 @@ footer .btn-resume, footer .btn-resume-footer {
   height: 100px;
   top: 50%;
   margin-top: -60%;
-  margin-left: 40%;
+  _margin-left: 40%;
   border-radius: 100%; }
 
 .skillsTab {
@@ -8027,7 +8027,8 @@ footer .btn-resume, footer .btn-resume-footer {
 
 .blog-home-date {
   margin-top: -5%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  font-size: 80%; }
 
 .card-title-shrink {
   color: #40407a; }
@@ -8383,7 +8384,7 @@ p {
 
 .row-m-t {
   margin-top: 20px;
-  margin-bottom: 10%; }
+  margin-bottom: 5%; }
 
 .smb-5 {
   margin-bottom: 5%; }
@@ -8408,7 +8409,5 @@ p {
 
 .smt-20 {
   margin-top: 20%; }
-
-/* TODO:  figure out how to set a color properly */
 
 /*# sourceMappingURL=style.css.map */
