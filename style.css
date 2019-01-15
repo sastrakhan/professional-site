@@ -8036,6 +8036,9 @@ footer .btn-resume, footer .btn-resume-footer {
 .card-title-shrink:hover {
   color: #bf5f82; }
 
+.mention-img {
+  width: 40%; }
+
 @media only screen and (max-width: 550px) {
   .card-title-shrink {
     font-size: 125%; }
@@ -8308,7 +8311,10 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear; }
 
 a:hover {
   text-decoration: none !important;

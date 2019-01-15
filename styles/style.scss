@@ -58,6 +58,9 @@ body{
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s linear;
+   -webkit-transition: color 0.3s linear;
+   -moz-transition: color 0.3s linear;
 }
 
 a:hover{
