@@ -7900,7 +7900,7 @@ a.div {
   color: #707070;
   font-family: 'Noto Serit';
   font-size: 150%;
-  text-transform: uppercase; }
+  _text-transform: uppercase; }
 
 #home-quote {
   font-size: 16px;
@@ -8001,7 +8001,7 @@ footer .btn-resume, footer .btn-resume-footer {
 
 .wrapper > .circle {
   position: absolute;
-  border: 3px solid #40407a;
+  border: 3px solid #706fd3;
   width: 100px;
   height: 100px;
   top: 50%;
@@ -8038,6 +8038,16 @@ footer .btn-resume, footer .btn-resume-footer {
 
 .mention-img {
   width: 40%; }
+
+.extend-footer {
+  padding-bottom: 5%;
+  padding-top: 2%;
+  margin-bottom: -8%; }
+
+#xkcd {
+  height: 300px;
+  margin-top: -53px;
+  margin-right: 20px; }
 
 @media only screen and (max-width: 550px) {
   .card-title-shrink {

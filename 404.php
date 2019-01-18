@@ -6,6 +6,7 @@ get_header(); ?>
     <div id="primary" class="row-m-t"> 
         <h1>Sorry friend,</h1>
         <h2>That URL doesn't exist on this site.</h2>
+        <h3>If it should exist please contact me (info below) and I'll repay you with in an intriguing ecard.</h3>
     </div>
 </main>
 

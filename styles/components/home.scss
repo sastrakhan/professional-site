@@ -4,7 +4,7 @@
     color: $primaryDarkGrey;
     font-family: 'Noto Serit';
     font-size: 150%;
-    text-transform: uppercase;
+    _text-transform: uppercase;
 }
 
 #home-quote{
@@ -127,7 +127,7 @@ footer .btn-resume{
 
 .wrapper > .circle {
     position: absolute;
-    border: 3px solid $primaryMid;
+    border: 3px solid $primaryLight;
     width: 100px;
     height: 100px;
     top: 50%;
@@ -170,6 +170,18 @@ footer .btn-resume{
 
 .mention-img{
     width: 40%;
+}
+
+.extend-footer{
+    padding-bottom:  5%;
+    padding-top: 2%;
+    margin-bottom: -8%;
+}
+
+#xkcd{
+    height: 300px;
+    margin-top: -53px;
+    margin-right: 20px;
 }
 
 @media only screen and (max-width : 550px) {
