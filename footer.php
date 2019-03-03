@@ -26,7 +26,7 @@
                 </button> -->
                 
             </div> 
-            <div class="col-md-6 d-none d-sm-none d-md-block">
+            <!-- <div class="col-md-6 d-none d-sm-none d-md-block">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading"> 
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>  -->
         <div>
     </section>
 

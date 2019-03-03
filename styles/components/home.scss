@@ -127,7 +127,7 @@ footer .btn-resume{
 
 .wrapper > .circle {
     position: absolute;
-    border: 3px solid $primaryLight;
+    border: 3px solid $primaryVeryLight;
     width: 100px;
     height: 100px;
     top: 50%;
@@ -184,7 +184,34 @@ footer .btn-resume{
     margin-right: 20px;
 }
 
+#xkcdRef{
+    margin-top: -14%;
+    text-align: right;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 75%;
+}
+
+@media only screen and (max-width: 990px){
+    .tablet-90-width{
+        max-width: 90%;
+    }
+
+    #xkcd{
+        height: 217px;
+        margin-top: -70px;
+    }
+}
+
+
 @media only screen and (max-width : 550px) {
+    .tablet-90-width{
+        max-width: 100%;
+    }
+
+    #secondQuote{
+        text-align: center;
+    }
     .card-title-shrink{
         font-size: 125%;
       }
@@ -205,6 +232,13 @@ footer .btn-resume{
         width: 75px;
         height: 75px;
     }
+    #project-list {
+        width: 108%;
+    }
+
+    #myTabContent{
+        width: 108%;
+    }
 
     #project-list .nav-link{
         min-height: 100px;
@@ -224,7 +258,6 @@ footer .btn-resume{
         _margin-left: -5%;
         margin-right: 0%;
         padding: 5%;
-        _width: 110%;
         padding-left: 10%;
         padding-right: 3%;
     }
@@ -295,6 +328,7 @@ footer .btn-resume{
     width: 101.5%;
 }
 
+//*All below so IE display descently*//
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
     .darken-overlay {
         height: 50% !important;
