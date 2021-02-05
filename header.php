@@ -53,11 +53,11 @@
                 <main>
                     <div class="container col-md-6 pull-left offset-md-2 text-white pt-5 center-text-mobile">
                         <aside id="openingQuote" class="mb-5">
-                            <h1 class="" style="font-size: 3.5em">Hi, I'm Sean.</h1>
+                            <h1 style="font-size: 3.5em">Hi, I'm Sean.</h1>
                                 <blockquote>
                                     <br />
-                                    <h3 class="NotoFont colorMobileChange"><i>Full-Stack Developer</i></h3>
-                                    <h3> Learning <i class="small fa fa-chevron-right text-secondaryDark"></i> Comfort </h3>
+                                    <h3 class="NotoFont colorMobileChange"><i>An Extroverted Engineer</i></h3>
+                                    <h3>I <i class="small fa fa-heart text-secondaryDark"></i> the <span class="text-secondaryDark">people</span> part of coding</h3>
                                 </blockquote>
                         </aside>
                     </div>

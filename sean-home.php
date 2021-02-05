@@ -7,17 +7,35 @@
          <!-- <section class="col-sm-6">
             <h1 id="home-banner">Skills &amp; Projects</h1>
             </section> -->
-         <blockquote  id="homeTopQuote" class="blockquote offset-md-3 col-md-6">
-            <h3 class="NotoFont text-primaryDark text-center">
+        <blockquote  id="homeTopQuote" class="row blockquote offset-md-2 col-md-9">
+            <h2 class="NotoFont text-primaryDark text-center">
                 <small><i class="small fa fa-quote-left"></i></small>
-                    A full-stack developer who values <large class="text-secondaryDark">learning</large>
-                    and <large class="text-secondaryDark">collaboration</large> over comfort and predictability.
-                <small><i class="small fa fa-quote-right"></i></small> 
+                    An extroverted engineer who <large class="text-secondaryDark">empathetically</large> 
+                    connects with clients and communicates complex technical ideas simply  <small><i class="small fa fa-quote-right"></i></small>
                 <br class="d-sm-block d-md-none" /> 
                 <p id="home-quote">-I said about myself</p>
-            </h3>
-            <hr class="post-Portfolio mt-4 mb-4" />
-         </blockquote>
+            </h2>
+        </blockquote>
+        
+        <section class="row mt-2">
+            <h5 class="text-primaryMidGrey text-center offset-md-1 col-11 mb-4">
+                <i>Seeking client-facing opportunities (e.g. Sales Engineering) to do the following:</i>
+            </h5>
+            <div class="col-md-4">
+                <h4 class="text-center text-primaryLight">Build trust with clients</h4>
+                <p>through understanding and clear expectations and writing super good (My Masters is in English)</p>
+                <!-- through understanding and clear expectations.</p> with any kind of client (from youth to CEOs) -->
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center text-primaryLight">Engage an audience</h4>
+                <p>with dazzling demos that inform (I taught middle school so short attention spans are my favorite) </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center text-primaryLight">Collaborate with fun co-workers</h4>
+                <p>where we prioritize the MVP, share ideas, and comfortably ask for help. </p>
+            </div>
+        </section>
+        <hr class="post-Portfolio mt-4 mb-4 w-100" />
       </article>
 
       <section class="">
@@ -35,48 +53,48 @@
       <ul id="project-list" class="nav nav-tabs row mt-2" id="myTab" role="tablist">
          <li class="nav-item col-6 nav-item-l">
             <a class="nav-link active" aria-selected="true" id="backend-tab" data-toggle="tab" href="#backend" href="#backend" role="tab" aria-controls="home">
+                <h2>Recent Projects</h2>
                <section class="row skillsTab">
-                  <div class="col-md-6 skillsList">
-                     <h2 class="d-sm-none d-none d-md-block">Backend</h2>
-                     <h2 class="d-sm-block d-md-none">Back/Front</h2>
+                  <div class="col-md-4 skillsList">
+                     <!-- <h2 class="d-sm-block d-md-none">Back/Front</h2> -->
                      <ul>
-                        <li>C#/.Net</li>
-                        <li>PHP</li>
-                        <li>Python <span class="text-primaryDarkGrey toggleDisplayMobile">
-                           <i><small>(in progress)</small></i>
+                        <!-- <li>C#/.Net</li> -->
+                        <li>React/Redux</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-5 skillsList">
+                     <ul>
+                     <li>Django/Flask <span class="text-primaryDarkGrey toggleDisplayMobile">
+                           <i><small>(python)</small></i>
                            </span>
                         </li>
                      </ul>
-                  </div>
-                  <div class="col-md-6 skillsList">
-                     <h2 class="d-sm-none d-none d-md-block">Frontend</h2>
+                  </div> 
+                  <div class="col-md-3 skillsList">
                      <ul>
-                        <li>React</li>
-                        <li>Angular</li>
-                        <li>Handlebars</li>
+                        <li>AWS</li>
                      </ul>
-                  </div>
+                  </div> 
                </section>
             </a>
          </li>
          <li class="nav-item col-6 nav-item-r">
             <a class="nav-link" id="data-exp-tab" data-toggle="tab" href="#data-exp" role="tab" aria-controls="data-exp" aria-selected="false">
+                <h2>Past Projects</h2>
                <section class="row skillsTab">
-                  <div class="col-md-6 skillsList">
-                     <h2 class="d-sm-none d-none d-sm-none d-md-block">Data</h2>
-                     <h2 class="d-sm-block d-md-none">Data/SAAS</h2>
+                  <div class="col-md-4 skillsList">
                      <ul>
-                        <li>SQL</li>
-                        <li>SSIS</li>
-                        <li>Power-BI</li>
+                        <li>C#/.NET, SQL</li>
+                     </ul>
+                  </div>
+                  <div class="col-md-2 skillsList">
+                     <ul>
+                        <li>Angular</li>
                      </ul>
                   </div>
                   <div class="col-md-6 skillsList">
-                     <h2 class="d-sm-none d-none d-sm-none d-md-block">SAAS</h2>
                      <ul>
-                        <li>CRM</li>
-                        <li>WordPress</li>
-                        <li>SharePoint</li>
+                        <li>CRM, SSIS, & much more</li>
                      </ul>
                   </div>
                </section>
@@ -101,17 +119,21 @@
    <article class="bg-primaryDark">
     <aside class="container pt-3 tablet-90-width">
             <article class="row">
-                <section class="col-lg-6 col-md-6 pr-0 row mt-3">
-                            <h3 id="secondQuote" class="NotoFont text-white">Currently interested in projects using <span class="text-secondaryDark">React, Node, Python, Cloud, PostgreSQL </span>
-                               and growing as a developer while always considering the user's needs.</h3>
-                        <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block" alt="Overthinking a system to pass arbitrary condiments when all the users wants is salt" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/bestpractices.png">
-                        <p id="xkcdRef"><a class="text-right text-primaryLightGrey d-none d-sm-none d-md-block" href="https://xkcd.com/974/" target="_blank">
+                <section class="col-lg-7 col-md-7 pr-0 row mt-3">
+                        <h3 id="secondQuote" class="NotoFont text-white mt-3">Currently interested in joining a <span class="text-secondaryDark">mission-driven</span>
+                          company needs an engineer with people skills to be client-facing but also expects him to code..</h3>
+                        <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block mt-2" alt="Overthinking a system to pass arbitrary condiments when all the users wants is salt" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/bestpractices.png">
+                         <p id="xkcdRef"><a class="text-right text-primaryLightGrey d-none d-sm-none d-md-block" href="https://xkcd.com/974/" target="_blank">
                             <i>Source</i>
                             </a>
                         </p>
+                        <!-- <div class="col-md-6">
+                            <h4 class="text-center text-primaryLight">Company Culture</h4>
+                            <p class="text-primaryLightGrey">Employees believe in the mission and in collaboration.  Ideally, most days look forward to going to work.</p>
+                        </div> -->
                 </section>       
 
-                <section class="col-lg-5 offset-lg-1 col-md-6 mb-3">
+                <section class="col-lg-4 offset-lg-1 col-md-5 mb-3">
                     <section class="mt-4 mb-5">
                     <h1 class="text-uppercase page-banner text-primaryLightGrey">Blog Posts</h1>
                     <hr class="post-Portfolio" />
@@ -178,15 +200,15 @@
                         <div class="card card-cascade narrower mb-3">
                             <a href="http://www.baltimoredcp.org/" target="_blank">
                                 <div class="view view-cascade overlay bdcp-image darken-overlay" >
-                                    <h4 class="pt-2 volunteerCardText" style=""><strong>Baltimore Dance Crews <span class="d-sm-none d-none d-md">Project</span></strong></h4>
+                                    <h4 class="pt-2 volunteerCardText" style=""><strong> <span class="d-sm-none d-none d-md">Project</span></strong></h4>
                                 </div>
                                 <!-- Card content -->
                                 <div class="card-body card-body-cascade bg-primaryLightGrey">
                                     <!-- Title -->
-                                    <h4 class="card-title">Dancer &amp; Developer</h4>
+                                    <h4 class="card-title">Baltimore Dance Crews Project</h4>
                                     <!-- Text -->
                                     <p class="card-text">
-                                        Volunteering with their data and CRM needs to help more people hear about their incredible mission...    
+                                        Tutor and perform hiphop dance alongside students to strengthen relationships to support youth from school to career    
                                     </p>
                                 </div>
                             </a>
@@ -196,15 +218,15 @@
                         <div class="card card-cascade narrower mb-3">
                             <a href="http://www.codeforbaltimore.org/team/" target="_blank">
                                 <div class="view view-cascade overlay code4bmore-image darken-overlay">
-                                            <h3 class="pt-2 volunteerCardText"><strong>Code 4 Baltimore</strong></h3>
+                                            <h3 class="pt-2 volunteerCardText"><strong></strong></h3>
                                     </div>
                                     <!-- Card content -->
                                     <div class="card-body card-body-cascade bg-primaryLightGrey">
                                         <!-- Title -->
-                                            <h4 class="card-title">Tech Lead</h4>
+                                            <h4 class="card-title">Code 4 Baltimore</h4>
                                         <!-- Text -->
                                         <p class="card-text">
-                                            Volunteering on tech projects to create solutions that aid local government in data transparency...  
+                                            Volunteer on tech projects to create solutions that aid local government in data transparency...  
                                         </p>
                                     </div>
                                 </div>
