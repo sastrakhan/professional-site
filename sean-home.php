@@ -17,9 +17,9 @@
             </h2>
         </blockquote>
         
-        <section class="row mt-2">
+        <section class="row mt-2 px-3">
             <h5 class="text-primaryMidGrey text-center offset-md-1 col-11 mb-4">
-                <i>Seeking client-facing opportunities (e.g. Sales Engineering) to do the following:</i>
+                <i>Currently seeking client-facing opportunities (e.g. sales engineering) to do the following:</i>
             </h5>
             <div class="col-md-4">
                 <h4 class="text-center text-primaryLight">Build trust with clients</h4>
