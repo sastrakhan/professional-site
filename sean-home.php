@@ -4,50 +4,55 @@
 <main class="content-area">
    <div id="primary" class="row-m-t container">
       <article class="row smt-10 pt-4">
-         <!-- <section class="col-sm-6">
-            <h1 id="home-banner">Skills &amp; Projects</h1>
-            </section> -->
         <blockquote  id="homeTopQuote" class="row blockquote offset-md-2 col-md-9">
-            <h2 class="NotoFont text-primaryDark text-center">
+            <h1 class="NotoFont text-primaryDark text-center">
                 <small><i class="small fa fa-quote-left"></i></small>
                     An extroverted engineer who <large class="text-secondaryDark">empathetically</large> 
                     connects with clients and communicates complex technical ideas simply. <small><i class="small fa fa-handshake"></i></small>
                 <br class="d-sm-block d-md-none" /> 
-                <p id="home-quote">-I said about myself</p>
-            </h2>
+                <p id="home-quote">- I said about myself</p>
+            </h1>
         </blockquote>
+
         
-        <section class="row mt-2 px-3">
-            <h5 class="text-primaryMidGrey text-center offset-md-1 col-11 mb-4">
-                <i>Currently seeking client-facing opportunities (e.g. sales engineering) to do the following:</i>
-            </h5>
+        <section id="threeClientStatements" class="row mt-2 px-3">
             <div class="col-md-4">
-                <h4 class="text-center text-primaryLight">Build trust with clients</h4>
-                <p>through understanding and clear expectations and writing super good (My Masters is in English)</p>
+                <h4>Builds trust with clients</h4>
+                <p class="">through 
+                <a target="_blank" href="http://seanstech.life/csv-upload-service/">  
+                        empathy, clear expectations </a> and writing super good (My Masters is in English)
+                </p>
                 <!-- through understanding and clear expectations.</p> with any kind of client (from youth to CEOs) -->
             </div>
             <div class="col-md-4">
-                <h4 class="text-center text-primaryLight">Engage an audience</h4>
-                <p>with concise yet dazzling demos (I taught middle school so short attention spans are my favorite) </p>
+                <h4>Engages an audience</h4>
+                <p>with <a target="_blank" href="http://seanstech.life/csv-upload-service/">  
+                    dazzling demos </a> 
+                (I <a target="_blank" href="http://seanstech.life/from-middle-school-teacher-to-software-engineer-consultant/"> 
+                    taught middle school </a>so short attention spans are my favorite) </p>
             </div>
             <div class="col-md-4">
-                <h4 class="text-center text-primaryLight">Collaborate with fun co-workers</h4>
-                <p>where we prioritize the MVP, share ideas, ask for help, and simply enjoy each other's company </p>
+                <h4>Plays well with others</h4>
+                <p>by <a target="_blank" href="http://seanstech.life/company-full-stack-initiative/"> 
+                    sharing ideas </a>, asking for help, and contributing to a fun, fulfilling company culture.</p>
             </div>
         </section>
         <hr class="post-Portfolio mt-4 mb-4 w-100" />
       </article>
 
-      <section class="">
-         <h1 class="text-uppercase page-banner" id="home-banner">Skills &amp; Projects</h1>
+      <section>
+         <h2 class="text-uppercase page-banner" id="home-banner">Skills &amp; Projects</h2>
       </section>
 
       <aside class="clearfix row justify-content-center">     
          <a target="_blank" href="http://seanstech.life/wp-content/uploads/Sean-Astrakhan-Resume.pdf">  
-         <button type="button" class="btn btn-resume home mt-2 mb-4">
-         <i class="fa fa-download text-secondaryLight" aria-hidden="true"></i> Resume 
-         </button>
+            <button type="button" class="btn btn-resume home mt-2 mb-4">
+                <i class="fa fa-download text-secondaryLight" aria-hidden="true"></i> Resume 
+            </button>
          </a>
+         <h5 class="text-primaryMidGrey text-center offset-md-1 col-11 mb-4">
+                <i>Currently open to client-facing Engineering opportunities (e.g. sales engineering)</i>
+         </h5>
       </aside>
 
       <ul id="project-list" class="nav nav-tabs row mt-2" id="myTab" role="tablist">
@@ -56,7 +61,6 @@
                 <h2>Recent Projects</h2>
                <section class="row skillsTab">
                   <div class="col-md-3 skillsList">
-                     <!-- <h2 class="d-sm-block d-md-none">Back/Front</h2> -->
                      <ul>
                         <li>React/Redux</li>
                      </ul>
@@ -102,11 +106,11 @@
       <div class="tab-content" id="myTabContent">
          <div class="tab-pane fade show active" id="backend" role="tabpanel" aria-labelledby="backend-tab">
             <!--Serverside Content-->
-            <?php buildPostExcerpt(array ( 0 => "serverside", 1 => "javascript")); ?>
+            <?php buildPostExcerpt(array ( 0 => "recent")); ?>
          </div>
          <div class="tab-pane fade" id="data-exp" role="tabpanel" aria-labelledby="data-exp-tab">
             <!--Data Content-->
-            <?php buildPostExcerpt(array ( 0 => "data", 1 => "saas")); ?>
+            <?php buildPostExcerpt(array ( 0 => "past")); ?>
          </div>
       </div>
 
@@ -117,17 +121,13 @@
     <aside class="container pt-3 tablet-90-width">
             <article class="row">
                 <section class="col-lg-7 col-md-7 pr-0 row mt-3">
-                        <h3 id="secondQuote" class="NotoFont text-white mt-3">Currently interested in joining a <span class="text-secondaryDark">mission-driven</span>
-                          company needing an engineer with people skills to be client-facing but also expects him to code.</h3>
+                        <h3 id="secondQuote" class="NotoFont text-white mt-3">Currently seeking a <span class="text-secondaryDark">mission-driven</span>
+                          company with an excitingly helpful product or service that needs an engineer with people and coding skills.</h3>
                         <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block mt-2" alt="Overthinking a system to pass arbitrary condiments when all the users wants is salt" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/bestpractices.png">
                          <p id="xkcdRef"><a class="text-right text-primaryLightGrey d-none d-sm-none d-md-block" href="https://xkcd.com/974/" target="_blank">
                             <i>Source</i>
                             </a>
                         </p>
-                        <!-- <div class="col-md-6">
-                            <h4 class="text-center text-primaryLight">Company Culture</h4>
-                            <p class="text-primaryLightGrey">Employees believe in the mission and in collaboration.  Ideally, most days look forward to going to work.</p>
-                        </div> -->
                 </section>       
 
                 <section class="col-lg-4 offset-lg-1 col-md-5 mb-3">
@@ -251,10 +251,10 @@
            $description_trimmed = mb_strimwidth($blogPost -> min_description, 0, 150, '...<br />');
    
            echo    '<div class="row mb-3">';
-           echo       '<div class="col-2 col-lg-2 col-md-0 wrapper">';
+           echo       '<div class="col-lg-2 col-md-0 wrapper">';
            echo          '<img class="rounded-circle img-responsive circle d-lg-block d-md-none" src="' . $blogPost -> imgURL . '" alt="' . $blogPost -> imgAltText . '" title="' . $blogPost -> title . '">';
            echo       '</div>';
-           echo       '<div class="offset-1 col-9 col-md-12 col-lg-9">';
+           echo       '<div class="offset-1 col-md-12 col-lg-9">';
            echo         '<a href="' . $blogPost -> link . '#">';
            echo           '<h4 class="card-title-shrink text-primaryVeryLight">' . $blogPost -> title . '</h4>';
            echo           '<p class="text-primaryLightGrey">' . $description_trimmed . '</p>';

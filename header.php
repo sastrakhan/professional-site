@@ -30,7 +30,7 @@
             </div>
             <picture>
                 <a class="nav-link" href="/">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small-oct2.png" class="sean-logo rounded-circle img-fluid">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sean-astrakhan-small-oct.png" class="sean-logo rounded-circle img-fluid">
                 </a>
             </picture>
 

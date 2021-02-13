@@ -1,0 +1,32 @@
+.post-Portfolio{
+    ul li{
+        font-family: 'Oxygen', sans-serif;
+    }
+    p{
+        font-size: 115%;
+        font-family: 'Oxygen', sans-serif;
+    }
+} 
+
+.post-Portfolio-title{
+    color: $primaryMid;
+}
+
+
+@media only screen and (max-width : 550px) {
+    .post-Portfolio{
+        p{
+            font-size: 100%;
+        }
+    } 
+    .post-Portfolio-title{
+        font-size: 175%;
+    }
+}
+
+hr.post-Portfolio {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $primaryLightGrey, rgba(0, 0, 0, 0));
+    margin-bottom: 2%;
+}

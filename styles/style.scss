@@ -1,0 +1,183 @@
+
+/*
+Theme Name: Sean's Theme
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Theme URI: https://www.lyrathemes.com/bootstrap-wordpress-theme-tutorial/
+Author: Sean Astrakhan
+Author URI: www.seanstech.life
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+*/
+
+$theme-colors: (
+    "primary": #607d8b,
+    "danger": #bf5f82,
+    "secondary": #f48fb1,
+    "info": #ffc1e3,
+
+    "primaryDark" :#2c2c54,
+    "primaryMid": #40407a,
+    "primaryLight": #706fd3,
+    "primaryVeryLight": #9c9bf3,
+
+    "secondaryLight" : #ffc1e3,
+    "secondaryDark" : #bf5f82,
+
+    "primaryLightGrey" : #cfcfcf,
+    "primaryMidGrey" : #9e9e9e,
+    "primaryDarkGrey": #707070,
+);
+
+    $primaryDark :#2c2c54;
+    $primaryMid: #40407a; 
+    $primaryLight: #706fd3;
+    $primaryVeryLight: #9c9bf3;
+    $footerPurple: #334560;
+
+    $secondaryLight : #ffc1e3;
+    $secondaryDark : #bf5f82;
+    $primaryLightGrey : #cfcfcf;
+    $primaryMidGrey : #9e9e9e;
+    $primaryDarkGrey: #707070;
+
+
+@import ".././node_modules/bootstrap/scss/bootstrap";
+@import "./components/mixins/_mixins";
+@import "./components/header";
+@import "./components/bubbles";
+@import "./components/button-on-home-page";
+@import "./components/blog-card";
+@import "./components/home";
+@import "./components/footer";
+@import "./components/post-Portfolio";
+@import "./components/other/my-journey";
+
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s linear;
+   -webkit-transition: color 0.3s linear;
+   -moz-transition: color 0.3s linear;
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: $secondaryDark;
+}
+
+main {
+    _margin-top: $header-lg-height - $header-sm-height;
+}
+
+section p{
+    font-family: 'Oxygen', sans-serif;
+}
+
+p {
+    font-family: 'Noto Serit', serif;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+}
+
+.lead{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 120%;
+}
+
+// Usage as a mixin
+.clearfix {
+    @include clearfix;
+}
+
+.boxShadow{
+    @include boxShadow();
+}
+
+@media only screen and (max-width : 766px) {
+    .boxShadow{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3%;
+    }
+
+    .p-mobile-Image{
+        padding: 10%;
+        margin-top: 10%;
+    }
+}
+
+
+.NotoFont {
+    font-family: 'Noto Serit', serif;
+}
+
+.btn a {
+    color: inherit;
+}
+
+.btn-primaryMid a {
+    color: $white;
+}
+
+//Navigation at bottom of page
+.screen-reader-text{
+    margin-top: 5%;
+    font-size: 115%;
+    color: $primaryDarkGrey;
+}
+
+.nav-previous, .nav-next {
+    color: $secondaryDark;
+    span {
+        font-size: 70%;
+    }
+}
+
+.nav-next{
+    right: 0;
+}
+
+.nav-previous:hover{
+    color: $secondaryDark;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px pink, 0 10px 10px pink;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+.fade-image-bottom{
+    height: 100%;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 3.6)
+    );
+}
+
+.row-m-t{
+    margin-top : 20px;
+    margin-bottom: 5%;
+  }
+
+
+  $margins: 5 10 15 20;
+
+  @each $margin in $margins{
+        .smb-#{$margin}{
+            margin-bottom: percentage($margin/100);
+        };
+        .smt-#{$margin}{
+            margin-top: percentage($margin/100);
+        }
+  }
+
