@@ -56,7 +56,7 @@
                             <h1 style="font-size: 3.5em">Hi, I'm Sean.</h1>
                                 <blockquote>
                                     <br />
-                                    <h3 class="NotoFont colorMobileChange"><i>Extroverted Empathetic Engineer</i></h3>
+                                    <h3 class="NotoFont colorMobileChange"><i>Extroverted Engineer</i></h3>
                                     <h3>I <i class="small fa fa-heart text-secondaryDark"></i> the <span class="text-secondaryDark">people</span> part of coding</h3>
                                 </blockquote>
                         </aside>
