@@ -8,7 +8,7 @@
             <h1 class="NotoFont text-primaryDark text-center">
                 <small><i class="small fa fa-quote-left"></i></small>
                     An extroverted engineer who <large class="text-secondaryDark">empathetically</large> 
-                    connects with clients and communicates complex technical ideas simply. <small><i class="small fa fa-handshake"></i></small>
+                    connects with clients and communicates complex technical ideas simply. <small><i class="small fa fa-quote-right"></i></small>
                 <br class="d-sm-block d-md-none" /> 
                 <p id="home-quote">- I said about myself</p>
             </h1>
@@ -26,7 +26,7 @@
             </div>
             <div class="col-md-4">
                 <h4>Engages an audience</h4>
-                <p>with <a target="_blank" href="http://seanstech.life/csv-upload-service/">  
+                <p>with <a target="_blank" href="http://seanstech.life/dazzling-demos/">  
                     dazzling demos </a> 
                 (I <a target="_blank" href="http://seanstech.life/from-middle-school-teacher-to-software-engineer-consultant/"> 
                     taught middle school </a>so short attention spans are my favorite) </p>
@@ -50,8 +50,8 @@
                 <i class="fa fa-download text-secondaryLight" aria-hidden="true"></i> Resume 
             </button>
          </a>
-         <h5 class="text-primaryMidGrey text-center offset-md-1 col-11 mb-4">
-                <i>Currently open to client-facing Engineering opportunities (e.g. sales engineering)</i>
+         <h5 class="text-primaryMidGrey d-none text-center offset-md-1 col-11 mb-4">
+                <i>Currently open to client-facing job opportunities (e.g. solutions architect, sales engineer)</i>
          </h5>
       </aside>
 
@@ -83,19 +83,19 @@
             <a class="nav-link" id="data-exp-tab" data-toggle="tab" href="#data-exp" role="tab" aria-controls="data-exp" aria-selected="false">
                 <h2>Past Projects</h2>
                <section class="row skillsTab">
-                  <div class="col-md-3 skillsList">
+                  <div class="col-md-2 skillsList">
                      <ul>
                         <li>C#/.NET</li>
                      </ul>
                   </div>
-                  <div class="col-md-2 skillsList">
+                  <div class="offset-md-1 col-md-4 skillsList">
                      <ul>
-                        <li>Angular</li>
+                        <li>Angular, SAAS</li>
                      </ul>
                   </div>
-                  <div class="offset-md-1 col-md-6 skillsList">
+                  <div class="col-md-5 skillsList">
                      <ul>
-                        <li>SQL, SSIS, & much more</li>
+                        <li>SQL, and more</li>
                      </ul>
                   </div>
                </section>
@@ -121,10 +121,10 @@
     <aside class="container pt-3 tablet-90-width">
             <article class="row">
                 <section class="col-lg-7 col-md-7 pr-0 row mt-3">
-                        <h3 id="secondQuote" class="NotoFont text-white mt-3">Currently seeking a <span class="text-secondaryDark">mission-driven</span>
-                          company with an excitingly helpful product or service that needs an engineer with people and coding skills.</h3>
-                        <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block mt-2" alt="Overthinking a system to pass arbitrary condiments when all the users wants is salt" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/bestpractices.png">
-                         <p id="xkcdRef"><a class="text-right text-primaryLightGrey d-none d-sm-none d-md-block" href="https://xkcd.com/974/" target="_blank">
+                        <h3 id="secondQuote" class="NotoFont text-white mt-3">Currently open to client-facing opportunities at a <span class="text-secondaryLight">mission-driven</span>
+                          company <i class=""><small>(e.g. solutions architect, sales engineer).</small></i></h3>
+                        <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block mt-2" alt="Overthinking a system to pass arbitrary condiments when all the users wants is salt" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/marioPink.png">
+                         <p id="xkcdRef"><a class="text-right text-primaryLightGrey d-none d-sm-none d-md-block" href="https://daedtech.com/value-proposition-guidance-for-recovering-programming-generalists/" target="_blank">
                             <i>Source</i>
                             </a>
                         </p>
@@ -132,13 +132,12 @@
 
                 <section class="col-lg-4 offset-lg-1 col-md-5 mb-3">
                     <section class="mt-4 mb-5">
-                    <h1 class="text-uppercase page-banner text-primaryLightGrey">Blog Posts</h1>
+                    <h1 class="text-uppercase page-banner text-primaryLightGrey">
+                        <a target="_blank" href="/my-blogs/"> Blog Posts </a>
+                    </h1>
                     <hr class="post-Portfolio" />
                     </section>
                     <?php createBlogList() ?>
-                    <a class="text-secondaryLight text-center page-banner" href="/my-blogs">
-                        <h5 style="margin-top: -5%">(See All)<h5>
-                    </a>
                 </section>
             </article>
     
@@ -205,7 +204,7 @@
                                     <h4 class="card-title">Baltimore Dance Crews Project</h4>
                                     <!-- Text -->
                                     <p class="card-text">
-                                        Tutor and perform hiphop dance alongside students to strengthen relationships to support youth from school to career    
+                                        Tutor students and perform hiphop dance to strengthen relationships to support youth from school to career.    
                                     </p>
                                 </div>
                             </a>
@@ -223,7 +222,7 @@
                                             <h4 class="card-title">Code 4 Baltimore</h4>
                                         <!-- Text -->
                                         <p class="card-text">
-                                            Volunteer on tech projects to create solutions that aid local government in data transparency...  
+                                            Volunteer on tech projects to create solutions that aid local government in data transparency.  
                                         </p>
                                     </div>
                                 </div>
