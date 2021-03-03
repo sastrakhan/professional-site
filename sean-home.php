@@ -120,17 +120,18 @@
    <article class="bg-primaryDark">
     <aside class="container pt-3 tablet-90-width">
             <article class="row">
-                <section class="col-lg-7 col-md-7 pr-0 row mt-3">
+                <section class="col-md-7 pr-0 row mt-3">
                         <h3 id="secondQuote" class="NotoFont text-white mt-3">Currently open to client-facing opportunities at a <span class="text-secondaryLight">mission-driven</span>
                           company <i class=""><small>(e.g. solutions architect, sales engineer).</small></i></h3>
-                        <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block mt-2" alt="Overthinking a system to pass arbitrary condiments when all the users wants is salt" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/marioPink.png">
-                         <p id="xkcdRef"><a class="text-right text-primaryLightGrey d-none d-sm-none d-md-block" href="https://daedtech.com/value-proposition-guidance-for-recovering-programming-generalists/" target="_blank">
+                        <img id="xkcd" class="xkcd img-fluid d-none d-sm-none d-md-block" 
+                            alt="mario metaphor for how I communicate well" title="xkcd comic about arbitrary code" src="<?php bloginfo('stylesheet_directory'); ?>/images/mario.png">
+                         <p id="xkcdRef"><a class="text-right text-primaryMidGrey d-none d-sm-none d-md-block" href="https://daedtech.com/value-proposition-guidance-for-recovering-programming-generalists/" target="_blank">
                             <i>Source</i>
                             </a>
                         </p>
                 </section>       
 
-                <section class="col-lg-4 offset-lg-1 col-md-5 mb-3">
+                <section class="col-md-5 mb-3 ml-4 pl-4" id="blogSection">
                     <section class="mt-4 mb-5">
                     <h1 class="text-uppercase page-banner text-primaryLightGrey">
                         <a target="_blank" href="/my-blogs/"> Blog Posts </a>
