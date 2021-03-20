@@ -34,7 +34,7 @@
             <div class="col-md-4">
                 <h4>Plays well with others</h4>
                 <p>by <a target="_blank" href="http://seanstech.life/company-full-stack-initiative/"> 
-                    sharing ideas </a>, asking for help, and contributing to a fun, fulfilling company culture.</p>
+                    sharing ideas </a>, asking for help, and contributing to a fun, fulfilling company culture</p>
             </div>
         </section>
         <hr class="post-Portfolio mt-4 mb-4 w-100" />

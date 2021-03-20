@@ -2,9 +2,20 @@
     ul li{
         font-family: 'Oxygen', sans-serif;
     }
-    p{
+
+    li, p{
         font-size: 115%;
         font-family: 'Oxygen', sans-serif;
+        color: $primaryDarkGrey;
+    }
+
+    a{
+        color: $primaryLight;
+    }
+
+    .category-title{
+        font-weight: bold;
+        color: $primaryMid;
     }
 } 
 
